@@ -1,0 +1,117 @@
+.headIcon-move {
+	-webkit-animation-name: hide, headIcon-mover;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-duration: 4.5s, 2s;
+	-webkit-animation-delay: 0s, 4.5s;
+}
+
+@-webkit-keyframes headIcon-mover {
+	from { opacity: 0; }
+	to	 { opacity: 1; }
+}
+
+.giraffe {
+	-webkit-animation-name: hide, giraffe-move;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-duration: 0s, 3s;
+	-webkit-animation-delay: 0s, 0s;
+}
+
+@-webkit-keyframes giraffe-move {
+	from  { opacity: 1; right:-100%; }
+	  to  { opacity: 1; right:0; }
+}
+
+.goldenRetriever {
+	-webkit-animation-name: hide, goldenRetriever-move;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-duration: 2s, 2s;
+	-webkit-animation-delay: 0s, 1s;
+}
+
+@-webkit-keyframes goldenRetriever-move {
+	from { opacity: 1; left:-100%; }
+	to	 { opacity: 1; left: 0px;    }
+}
+
+.education {
+	-webkit-animation-name: hide, education-move;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-duration: 2s, 2s;
+	-webkit-animation-delay: 0s, 1s;
+}
+
+@-webkit-keyframes education-move {
+	from { opacity: 1; right:-100%; }
+	to	 { opacity: 1; right:0;    }
+}
+
+.skills {
+	-webkit-animation-name: hide, skills-move;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-duration: 2s, 2s;
+	-webkit-animation-delay: 0s, 1s;
+}
+@-webkit-keyframes skills-move {
+	from { opacity: 1; left:-100%; }
+	to	 { opacity: 1; right:0;    }
+}
+
+
+@-webkit-keyframes hide {
+	from {opacity: 0; }
+	to   {opacity: 0; }
+}
+
+.octopus {
+}
+
+.Work-Experience {
+	-webkit-animation-name: hide, experience-move;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-duration: 2s, 2s;
+	-webkit-animation-delay: 0s, 1s;
+}
+@-webkit-keyframes experience-move {
+	from { opacity: 1; right:-100%; }
+	to	 { opacity: 1; right:0;    }
+}
+
+
+.Projects {
+}
+
+.Technical-Skill {
+}
+
+.Honors {
+}
+
+.Card {
+}
+
+.Name {
+}
+
+.PersonalInfo {
+}
+
+.webhref {
+}
+
+.homeIcon {
+}
+
+/** 
+ * .right-line {
+}
+
+.emph {
+}
+
+.left-line {
+}
+
+.headIcon {
+}
+*/

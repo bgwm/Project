@@ -1,0 +1,113 @@
+- DFS
+- BFS
+- Post order
+- in order
+- pre order
+- level order
+- binary search 
+
+DFS(G,v)
+	mark(v)
+	while v.hasUnmarked(), do
+		node = v.nextUnmarkedChild()
+		mark(node)
+		DFS(G,node)
+
+BFS(G,v)
+	q init	
+	q.enqueue(v)
+	while !q.empty(), do
+		node = q.dequeue();
+		node.marked()
+		if t == target, then return
+		while node.hasUnmarked(), do
+			nodeChild = node.getNextUnmarked()
+			nodeChild.marked()
+			q.enqeue(nodeChild)
+
+
+
+post_order(node)
+	if node==NULL then return
+	post_order(node.left)
+	post_order(node.right)
+	visit(node)
+
+in_order(node)
+	if node==NULL return
+	in_order(node.left)
+	visit(node)
+	in_order(node.right)
+
+pre_order(node)
+	if node==NULL then return
+	visit(node)
+	pre_order(node.left)
+	pre_node(node.right)
+
+in_order(node)
+	parentstack init;
+	while !parentstack.isEmpty() || node!=NULL
+		if node!=NULL, then
+			parentstack.push(node)
+			node = node.left;
+		else
+			node = parentstack.pop()
+			visit(node)
+			node = node.right
+
+pre_order(node)
+	parentStack init
+	while !parentStack.empty() || node!=NULL, do
+		if node != null, then
+			visit(node)
+			if node.right!=null, then
+				parentStack.push(node.right)
+			node = node.left()
+		else
+			node = parentStack.pop()
+
+
+post_order(node)
+	stack init;
+	stack.push(node)
+	prevNode = null
+	while !stack.empty(), do
+		currentNode = stack.touch()
+
+		if preNode == NULL || preNode.left == currentNode ||
+		preNode.right == currentNode, then
+
+			if currentNode.left!=NULL, then
+				nodeStack.push(currentNode.left)
+			else if currentNode.right != NULL, then
+				nodeStack.push(currentNode.right)
+
+		else if currentNode.left == prevNode, then
+
+			if currentNode.right != NULL, then
+				nodeStack.push(currentNode.right)
+
+		else
+			visit(currentNode)
+			nodeStack.pop()
+		
+		prevNode = currentNode	
+		 
+
+
+
+level_order(root)
+	q = initlization
+	q.enqueue(root)
+	while ! q.empty do
+		node = q.dequene()
+		visit(node)
+
+		/** getNextNode() */
+		if node.left != NULL, then
+			q.enqueue(node.left)
+		if node.right != NULL, then
+			q.enqueue(node.right)
+
+

@@ -1,0 +1,2 @@
+site_id, site_name, site_location, host_id, host_name, ip_address, operative_system, load_avg_1min, load_avg_5min, load_avg_15min
+101, NY-01, New York, 1001, srv001001, 10.1.2.3, Windows, 1.3, 2.5, 1.2

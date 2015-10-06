@@ -1,0 +1,111 @@
+<link href="templates/public.css" rel="stylesheet" type="text/css">
+{include file="javascript.htm"}
+<body>
+<table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+    <tr>
+        <th>添加图片</th>
+        <th>图片列表</th>
+    </tr>
+    <tr>
+        <td width="350" valign="top">
+            <form action="image.php?rec=insert&temp_num={$temp_num}&page_id={$page_id}" method="post" enctype="multipart/form-data">
+                <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableOnebor">
+                    <tr>
+                        <td>图片名称<br>
+                            <input type="text" name="image_name" value="" size="20" class="inpMain" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>图片文件<br>
+                            <input type="file" name="image_img" class="inpFlie" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>{$lang.show_link}
+                            <br>
+                            <input type="text" name="image_link" value="" size="40" class="inpMain" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>{$lang.sort}<br>
+                            <input type="text" name="sort" value="50" size="20" class="inpMain" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="hidden" name="token" value="{$token}" />
+                            <input type="hidden" name="image_temp_num" value="{$temp_num}" />
+                            <input name="submit" class="btn" type="submit" value="{$lang.btn_submit}" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+        <td valign="top">
+            <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableOnebor">
+                <tr>
+                    <td width="100">图片名称</td>
+                    <td></td>
+                    <td width="50" align="center">{$lang.sort}</td>
+                    <td width="80" align="center">{$lang.handler}</td>
+                </tr>
+                <!-- {foreach from=$image_list item=image_list} -->
+                <!-- {if $image_list.id eq $id} -->
+                <form action="image.php?rec=update&temp_num={$temp_num}&page_id={$page_id}" method="post" enctype="multipart/form-data">
+                    <tr>
+                        <td height="30" colspan="4"><strong>{$lang.show_edit}</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableNobor">
+                                <tr>
+                                    <td>{$lang.show_name}:
+                                        <input type="text" name="image_name" value="{$image_list.name}" size="20" class="inpMain" /></td>
+                                    <td align="right">{$lang.sort}:
+                                        <input type="text" name="sort" value="{$image_list.sort}" size="20" class="inpMain" /></td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">{$lang.show_img}:
+                            <input type="file" name="image_img" />
+                            {if $image_list.image_url}<a href="../{$image_list.image_url}" target="_blank"><img src="images/yes.gif"></a>{else}<img src="images/no.gif">{/if}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">{$lang.show_link}:
+                            <input type="text" name="image_link" value="{$image_list.image_link}" size="55" class="inpMain" />
+                        </td>
+                    </tr>
+                    <input type="hidden" name="id" value="{$image_list.id}">
+                    <tr>
+                        <td height="40" colspan="4">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tableNobor">
+                                <tr>
+                                    <td>
+                                        <input type="hidden" name="token" value="{$token}" />
+                                        <input type="hidden" name="image_img" value="{$image_list.image_url}">
+                                        <input name="submit" class="btn" type="submit" value="{$lang.btn_submit}" />
+                                    </td>
+                                    <td align="right"><a href="image.php?temp_num={$temp_num}&page_id={$page_id}" class="btnGray">{$lang.cancel}</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </form>
+                <!-- {else} -->
+                <tr>
+                    <td><a href="../{$image_list.image_url}" target="_blank"><img src="{$image_list.thumb}" width="100" /></a></td>
+                    <td>{$image_list.name}</td>
+                    <td align="center">{$image_list.sort}</td>
+                    <td align="center"><a href="image.php?rec=edit&id={$image_list.id}&temp_num={$temp_num}&page_id={$page_id}">{$lang.edit}</a> | <a href="image.php?rec=del&id={$image_list.id}&temp_num={$temp_num}&page_id={$page_id}">{$lang.del}</a></td>
+                </tr>
+                <!-- {/if} -->
+                <!-- {/foreach} -->
+            </table>
+        </td>
+    </tr>
+</table>
+</body>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <title>{$page_title}</title>
+    <link rel="stylesheet" href="css/global.css" type="text/css" />
+    <link href="css/mb_base.css" rel="stylesheet" type="text/css">
+    <link href="css/mb_index.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-1.js"></script>
+
+</head>
+
+<body>
+
+<!------header------>
+<div class="head">
+    {include file="inc/header.tpl"}
+    <div class="clears"></div>
+</div><!--end-header-->
+<div class="clears"></div>
+
+<div id="page-banner" style="background: url(images/page-banner-2.jpg) no-repeat"></div>
+
+<div class="page-cont">
+
+    <div class="page-dt">
+        <div class="page-text">
+            <p id="title-sp">{$cate_info.cat_name}</p>
+            <ul class="page-show">
+                <li><a class="circle cl-0"><p id="circle-title">选择国家<br>SELECTCONTRY</p></a></li>
+                <!-- {foreach from=$product_list name=product_list item=product} -->
+                <li><a class="circle" style="background: url({$product.thumb_r});" onmouseover="this.style.cssText='background: url({$product.thumb});'" onmouseout="this.style.cssText='background: url({$product.thumb_r});'" href="{$product.url}"><p>{$product.name}</p></a></li>
+                <!-- {/foreach} -->
+                <!--<li><a class="circle cl-1" href="http://localhost/meiqiao/product/american/1.html"><p>美国</p></a></li>
+                <li><a class="circle cl-2" href="http://localhost/meiqiao/product/canada/2.html"><p>加拿大</p></a></li>
+                <li><a class="circle cl-3" href="http://localhost/meiqiao/product/britain/3.html"><p>英国</p></a></li>
+                <li><a class="circle cl-4" href="http://localhost/meiqiao/product/australia/4.html"><p>澳大利亚</p></a></li>
+                <li><a class="circle cl-5" href="http://localhost/meiqiao/product/italian/5.html"><p>意大利</p></a></li>
+                <li><a class="circle cl-6" href="http://localhost/meiqiao/product/korea/6.html"><p>韩国</p></a></li>
+                <li><a class="circle cl-7" href="http://localhost/meiqiao/product/newzealand/7.html"><p>新西兰</p></a></li>
+-->
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+<!--底部-->
+<div class="flooter">
+    {include file="inc/footer.tpl"}
+</div>
+</body>
+</html>

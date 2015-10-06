@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> BgWm Group, Inc (Comming Soon)... </title>
+	<link type="text/css" rel="stylesheet" href="./css/main.css" />
+	<link type="text/css" rel="stylesheet" href="./css/dynamic.css" />
+</head>
+
+<body>
+	<nav><ul>
+		<li><img src="./images/home.svg" align="right" id="homeIcon">
+			<a href="#giraffe">Home</a></li>
+		<li><a href="#Education"  > Education </a></li>
+		<li><a href="#Technical-Skill"> Technical Skills </a></li>
+		<li><a href="#Work-Experience"> Work Experience </a></li>
+		<li><a href="#Projects"> Course Projects </a></li>
+		<li><a href="#Honors"> Honors </a></li></ul></nav>
+
+	<div id="container">
+		<div class="headIcon headIcon-move" 
+			style="background-image: url(/images/head.jpg)" ></div>
+		<div id="giraffe" class="giraffe"></div>
+		<div id="goldenRetriever" class="goldenRetriever">
+			<div id="Card">
+				<div id="Name"> <b> <span class="emph"> HAOLONG NING </span> </b></div>
+				<div id="PersonalInfo">
+					<div id="webhref"> 54.201.225.195/People/N.Haolong&nbsp</div>
+						Ning<span class="emph">.</span>Haolong <span class="emph"> AT </span> gmail.com <br />
+						<!--a class="italic-bold" href="http://54.201.225.195">BgWm Group</a> 
+							Co-Founder <span class="emph">&</span--> Software Engineer <span class="emph">&</span> 
+							UI/UX Designer <br />
+						<br /> </div> </div> </div> 
+
+		<div id="elephant">
+
+			
+			<!----------------- Education -------------------->
+			<div id="Education" class="education">
+				<div class="left-line"></div>
+				<div class="left-bigO"></div>
+				<div class="left-title"> EDUCATION </div>
+
+				<ul class="left-general">
+					<li class="title edu"> Stony Brook University (SUNY Stony Brook) </li>
+						<li class="degree"> <span class="emph">M.S. </span> 
+							in Computer Science <span class="notice n1"> BS/MS program </span> </li>
+					<li class="left-smallO c1"> </li>
+					<li class="time x1"> Aug, 2012 - Dec, 2013 </li>
+
+					<li class="degree"> <span class="emph"> B.E. </span> in Computer Science </li>
+					<li class="degree">	<span class="emph"> B.E. </span> in Applied Mathematics and Statistics </li>
+					<li class="left-smallO c2"> </li>
+					<li class="time x2"> Aug, 2010 - May, 2012 </li>
+
+					<li class="core-course"> 
+						<span class="LT"></span> &nbsp;&nbsp;&nbsp;Database System &nbsp;
+						<span class="LT"></span> &nbsp;&nbsp;&nbsp;Software Engineering &nbsp;
+						<span class="LT"></span> &nbsp;&nbsp;&nbsp;Algorithms &nbsp;
+						<span class="LT"></span> &nbsp;&nbsp;&nbsp;Programming in UNIX/C &nbsp; 
+						<span class="LT"></span> &nbsp;&nbsp;&nbsp;Users Interfaces &nbsp; <br />
+						<span class="LT"></span> &nbsp;&nbsp;&nbsp;Computational Geometry&nbsp;
+						<span class="LT"></span> &nbsp;&nbsp;&nbsp;Differential Equations &nbsp;
+						<span class="LT"></span> &nbsp;&nbsp;&nbsp;Numerical Analysis &nbsp; 
+						<span class="LT"></span> &nbsp;&nbsp;&nbsp;Securiy &nbsp;
+						<span class="LT"></span> &nbsp;&nbsp;&nbsp;Probability Theory &nbsp;</li></ul>
+
+			</div>
+
+			<!---------------- Skill ---------------->
+			<div id="Technical-Skill" class="skills">
+				<div class="right-title"> TECHNICAL MAP </div>		
+				<div class="skill-left"> 
+					<div class="sBull0 yy"> </div> <div class="sBull0 yy"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div>
+					<div class="sList skill-x">Linux / UNIX </div>
+					
+					<div class="sBull0 yy"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div>
+					<div class="sList skill-x">Objective-C</div>
+	
+					<div class="sBull0 yy"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div>
+					<div class="sList skill-x">Shell Scripts</div>
+					
+					<div class="sBull0 yy"> </div> <div class="sBull0 yy"> </div> <div class="sBull0 yy"> </div> <div class="sBull0"> </div>
+					<div class="sList skill-x"> HTML / CSS </div>
+	
+					<div class="sBull0 yy"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div>
+					<div class="sList skill-x"> SQL Scripting</div>
+				</div>
+
+				<div class="skill-mid">
+					<div class="sBull0 yy"> </div> <div class="sBull0 yy"> </div> <div class="sBull0 yy"> </div> <div class="sBull0"> </div>
+					<div class="sList"> Java </div>
+					
+					<div class="sBull0 yy"> </div> <div class="sBull0 yy"> </div> <div class="sBull0 yy"> </div> <div class="sBull0"> </div>
+					<div class="sList"> C </div>
+	
+					<div class="sBull0 yy"> </div> <div class="sBull0 yy"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div>
+					<div class="sList"> Python </div>
+					
+					<div class="sBull0 yy"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div>
+					<div class="sList">Git</div>
+	
+					<div class="sBull0 yy"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div>
+					<div class="sList">cvs/svn</div> </div>
+				
+					<div class="skill-right">
+
+					<div class="sBull0 yy"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div>
+					<div class="sList">Matlab<br /></div>
+					
+					<div class="sBull0 yy"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div>
+					<div class="sList">make</div>
+	
+					<div class="sBull0 yy"> </div> <div class="sBull0 yy"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div>
+					<div class="sList"> Javascript </div>
+					
+					<div class="sBull0 yy"> </div> <div class="sBull0 yy"> </div> <div class="sBull0 yy"> </div> <div class="sBull0 yy"> </div>
+					<!--div class="sList"> BullShit </div-->
+	
+					<div class="sBull0"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div> <div class="sBull0"> </div>
+					<div class="sList"> ? </div>
+				</div>
+
+
+			</div>
+			
+			<!------------------- Experience ------------------->
+			<div id="Work-Experience" class="Work-Experience">
+				<div class="left-line"></div>
+				<div class="left-bigO"></div>
+				<div class="left-title"> EXPERIENCE </div> 
+				<ul class="left-general">
+					<li class="title"> web developer, 
+						<span class="notice"> iaps office, stony brook university </span> </li>
+					<li class="left-smallO"> </li>
+					<li class="time left"> Aug, 2012 - Jan, 2014 </li>
+						<ul>
+							<li class="list-content"> Designed and implemented websites using HTML, CSS, and JQuery 
+														(http://www.stonybrook.edu/studyabroad/) </li>
+							<li class="list-content"> Developed and maintained program details among different system, access 
+							computing needs and system requirements	</li> </ul> </ul> 
+
+				<ul class="left-general">
+					<li class="title"> Web Developer, 
+						<span class="notice"> IAPS Office, Stony Brook University </span> </li>
+					<li class="left-smallO"> </li>
+					<li class="time left"> Aug, 2012 - Jan, 2014 </li>
+						<ul>
+							<li class="list-content"> Designed and implemented websites using HTML, CSS, and JQuery 
+														(http://www.stonybrook.edu/studyabroad/) </li>
+							<li class="list-content"> Developed and maintained program details among different system, access 
+							computing needs and system requirements	</li> </ul> </ul> 
+	
+				<ul class="left-general">
+					<li class="title"> Teaching Assistant, 
+						<span class="notice"> Intro. to Algorithm, Intro. to Java </span> </li> 
+					<li class="left-smallO"> </li>
+					<li class="time left"> Jan, 2012 - May, 2012 </li>
+						<ul>
+							<li class="list-content"> Assisted over 30 students in computer lab every week and helped over 90%
+														of students finish weekly lab assignments. </li>	
+							<li class="list-content"> Correct over 100 student assigments and grade examinations. </li> 
+							<li class="list-content"> Provided TA hours over 2 hours per week and gained great feedbacks from 
+														students </li> </ul> </ul>
+			</div>
+
+			<!------------------ Project ------------------>
+			<div id="Projects" class="text">
+					<div class="right-title"> PROJECTS </div>
+					<div class="right-general">
+						<div class="right-content">
+							<div class="content-title"> Fricke Polynomial Generator </div>
+							<div class="content-tag"> Java</div>
+							<div class="content-tag"> Algorithm</div>
+							<div class="content-list">
+								Significant reduced calculation overhead for researchers to generate huge Fricke polynomial </div>
+							<div class="content-list">
+								Designed an algorithm to simplify Fricke polynomial relations and implemented a java program to generate it </div>
+                            <div class="content-list">
+								Search Fricke Polynomial in Google, choose second content to check details.</div>
+						</div>
+						<div class="right-content">
+							<div class="content-title"> Map Data Visualization </div>
+							<div class="content-tag"> UI</div>
+							<div class="content-tag"> Java</div>
+                            <div class="content-tag"> Design Pattern</div>
+                            <div class="content-tag"> SDLC</div>
+							<div class="content-list">
+                                Designed and implemented large-scale java project that mapping metadata to world map along fully subsidiary functions as well as visualization such as zoom in/out, color re-rendering, profile, etc..</div>
+							<div class="content-list">
+								Adapted memento, template, observer, factory method, and MVC patterns to project and achieved great experience of GUI development </div>
+						</div>
+						<div class="right-content">
+							<div class="content-title"> C Memory Helper </div>
+							<div class="content-tag"> C</div>
+							<div class="content-tag"> gcc</div>
+                            <div class="content-tag"> git</div>
+                            <div class="content-tag"> autotools</div>
+                            <div class="content-tag"> shell Script</div>
+                            <div class="content-tag"> sed</div>
+                            <div class="content-tag"> make</div>
+							<div class="content-list">
+								Developed programs that detected 20+ various C bugs SIGBUS, SIGV, etc. which regular GCC fail to </div>
+							<div class="content-list">
+								Adapted a user-level file encryption program S/key to three different UNIX platforms, writing shell scripts, M4 marco, and makefile templates to automatically
+                                generate C code headers (similar to autotool) </div>
+						</div>
+<div class="right-content">
+							<div class="content-title"> Apache Script-Nonce Module </div>
+							<div class="content-tag"> Apache</div>
+							<div class="content-tag"> C </div>
+							<div class="content-list">
+								Designed and implemented an Apache module to automatically
+                                insert script nonces into Content Security Policy
+                                (CSP). </div>
+							<div class="content-list">
+								Successfully prevents reflected and stored cross-site
+                                scripting (XSS) attacks, project mainly focus on
+                                preventing javascript code hijacking. </div>
+						</div>
+<div class="right-content">
+							<div class="content-title"> CS532or </div>
+							<div class="content-tag"> Java</div>
+                            <div class="content-tag"> Java Bean</div>
+                            <div class="content-tag"> JSP</div>
+                            <div class="content-tag"> HTML / CSS</div>
+                            <div class="content-tag"> XML</div>
+							<div class="content-list">
+								Developed simple social networking web application with
+                                fundamental functions such as making post, making comments, joining group, distributing ads and others. </div>
+							<div class="content-list">
+								Project built based on {HTML, CSS, JSP}
+                                (front side) and JSP,
+                                java bean, and DB2 (Back end). </div>
+                            
+						</div>
+
+                        <div class="right-content">
+                            <div class="content-title"> GARS </div>
+                            <div class="content-tag"> Java</div>
+                            <div class="content-tag"> GWT</div>
+                            <div class="content-list">
+                                Designed and implemented graduate admission
+                                evaluation program (GARS) by
+                                Google web toolkit GWT
+                                and Java</div>
+                            <div class="content-list">
+                                Achieved great teamwork experience and make great UI/UX
+                                contribution, particularly on GUI development </div>
+    
+                        </div>
+
+
+						<div class="right-content">
+							<div class="content-title"> WPClusteror </div>
+							<div class="content-tag"> Matlab</div>
+							<div class="content-tag"> Python</div>
+							<div class="content-list">
+								Implemented Naive Bayes classifier training program to train images with text descriptions, 
+								and Achieved great knowledge of natural language processing and computer vision </div>
+						</div>
+					</div>
+			
+			</div>
+	
+				
+			<!------------------- Honors ------------------->
+			<div id="Honors" class="Honors">
+				<div class="left-line"></div>
+				<div class="left-bigO"></div>
+				<div class="left-title"> HONORS </div> 
+				<div class="last" >
+					<ul class="left-generalxh">
+					<li class="title lix"> Harriet McFadden Memorial Scholarship </li>
+					<li class="left-smallO IDK"> </li>
+					<li class="time lit"> Aug, 2010 - Jun, 2011 </li></ul> 
+					
+					<ul class="left-generalxh">
+					<li class="title lix"> Member of ACM Stony Brook Computing Society </li>
+					<li class="left-smallO IDK"> </li>
+					<li class="time lit"> Aug, 2011 - present </li></ul> 
+			
+					<ul class="left-generalxh">
+					<li class="title lix"> Member of Phi Eta Sigma</li>
+					<li class="left-smallO IDK"> </li>
+					<li class="time lit"> Aug, 2009 - present </li></ul> 
+
+					<ul class="left-generalxh">
+					<li class="title lix"> Second Place Award of National Mathematics Competition (China)</li>
+					<li class="left-smallO IDK"> </li>
+					<li class="time lit"> 2004 </li></ul> </div>
+
+
+
+
+			</div>
+
+	
+		
+		</div>
+		
+		<div id="octopus">
+		
+		</div>
+
+	</div>
+</body>
+
+</html>	

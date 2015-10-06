@@ -1,0 +1,5 @@
+#! /usr/bin/sh
+javac Testing.java
+
+java Testing
+rm *.class

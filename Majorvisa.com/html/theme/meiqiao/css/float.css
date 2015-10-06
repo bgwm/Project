@@ -1,0 +1,86 @@
+.left_activ {
+    position: fixed;
+    top: 35%;
+    z-index: 1000;
+}
+
+.right_activ {
+    position: fixed;
+    top:35%;
+    z-index: 1000;
+}
+
+.left_btn{
+    position: fixed;
+    top:58%;
+    margin-left:45px;
+    z-index:1111;}
+
+.left_activ .activ_box {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.right_activ .activ_box2 {
+
+    margin: 0 auto;
+    right:0px;
+    position:fixed;
+}
+
+.right_activ .activ_box2  ul{
+    width:140px;
+    height:auto;
+}
+
+.right_activ .activ_box2  ul li{
+    list-style:none;
+    margin-top:-4px;
+}
+
+.sp-left{
+    width:170px;
+    height:440px;
+}
+
+.sp-left  li{
+    margin-top:-4px;
+}
+
+.sp-left  #btn1{
+    background:url(http://i3.tietuku.com/71b5c3324dc9b017.png);
+    width:170px;
+    height:170px;}
+
+.sp-left #sp-btn{
+    width:75px;
+    height:75px;
+    margin-left:48px;
+    z-index:2000;}
+
+.activ_box2 ul #sp-video{
+    margin-top:43px;
+    margin-left:15px;
+    width:110px;
+    height:80px;
+    float:left;
+    background:#fff;}
+
+.activ_box2 ul #video-bg{
+    background:url(http://i3.tietuku.com/4d1855a31a66b7e4.jpg);
+    width:140px;
+    height:127px;}
+
+
+.activ_box2  #kftc-bg{
+    background:url(http://i3.tietuku.com/66d51090d5a295bc.jpg);
+    width:140px;
+    height:70px;}
+
+.activ_box2 #kftc{
+    display:block;
+    width:50px;
+    height:20px;
+    margin-left:70px;
+}

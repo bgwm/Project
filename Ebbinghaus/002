@@ -1,0 +1,12 @@
+Linklist:
+	- SortedInsert()*3
+	- InsertSort()
+	- Append()
+	- FrontBackSplit()
+	- RemoveDupliactes()
+ 	- MoveNode()
+	- AlternatingSplit()
+	- ShuffleMerge()
+	- SortedMerge()
+	- MergeSort()
+

@@ -1,0 +1,251 @@
+<div class="tabmenu1 w h70">
+    <ul>
+        <li onmouseover="tabChange(this,'indexlxzx')" class="cli"><span class="cglx_mg">美国</span></li>
+        <li class="" onmouseover="tabChange(this,'indexlxzx')"> <span class="cglx_jnd">加拿大</span></li>
+        <li class="" onmouseover="tabChange(this,'indexlxzx')"><span class="cglx_yg">英国</span></li>
+        <li class="" onmouseover="tabChange(this,'indexlxzx')"><span class="cglx_adly">澳洲</span></li>
+        <li class="" onmouseover="tabChange(this,'indexlxzx')"><span class="cglx_dg">意大利</span></li>
+        <li class="" onmouseover="tabChange(this,'indexlxzx')"><span class="cglx_hg">韩国</span></li>
+        <li class="" onmouseover="tabChange(this,'indexlxzx')"><span class="cglx_xg">新西兰</span></li>
+    </ul>
+</div><!-----end-国旗切换----->
+
+<div class="cb"></div>
+
+<div class="w mt10">
+    <div class="fl index_zt w640"><span>最新动态</span><a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6">查看更多&gt;</a></div>
+    <div class="fr index_zt w340"><span>推荐院校</span><a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=9">查看更多&gt;</a></div>
+</div><!-----end-分栏标题----->
+
+<div class="cb"></div>
+
+<div id="indexlxzx" class="tab_c w pb20 mt10">
+<!-----下方内容----->
+<ul class="hidden" name="tabul">
+    <div class="lxzx_1 fl"> <a href="http://beetle.org.cn/content-6-391-1.html" title="保守主义小卒的移民之路（一）----- 移，还是不移"><img src="images/20150207101508540.jpg"></a> <a href="http://beetle.org.cn/content-6-391-1.html" title="保守主义小卒的移民之路（一）----- 移，还是不移" class="a">保守主义小卒的移民之路（一）----- 移，还是不移</a>
+        <p>有关移民的故事（一）移，还是不移乍一看，会有很多人觉得，能移当然移啊；有什么好考虑的。但事实上，从我们家开始做移民这件事之后，身边 </p>
+    </div>
+
+    <div class="lxzx_m fl ml20">
+        <p><span class="xh">1</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E7%BE%8E%E5%9B%BD" title="美国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-409-1.html" title="留学选择焦虑-明年再战,还是今年就去?">留学选择焦虑-明年再战,还是</a><span class="fr">2015-02-07</span></p>
+        <p><span class="xh">2</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E7%BE%8E%E5%9B%BD" title="美国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-408-1.html" title="申请季：我们如何平衡竞争与友谊？">申请季：我们如何平衡竞争与</a><span class="fr">2015-02-07</span></p>
+        <p><span class="xh">3</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E7%BE%8E%E5%9B%BD" title="美国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-407-1.html" title="2015年美国高中留学面试常见问题及应对技巧">2015年美国高中留学面试常见</a><span class="fr">2015-02-04</span></p>
+        <p><span class="xh">4</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E9%99%A2%E6%A0%A1%E8%B5%84%E8%AE%AF&amp;lxmdd=%E7%BE%8E%E5%9B%BD" title="美国留学-院校资讯">【院校资讯】</a><a href="http://beetle.org.cn/content-6-405-1.html" title="全美大学毕业起薪排名｜排名只是数字，实力是证明">全美大学毕业起薪排名｜排名</a><span class="fr">2015-02-07</span></p>
+        <p><span class="xh">5</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E8%A1%8C%E5%89%8D%E5%87%86%E5%A4%87&amp;lxmdd=%E7%BE%8E%E5%9B%BD" title="美国留学-行前准备">【行前准备】</a><a href="http://beetle.org.cn/content-6-404-1.html" title="行前准备之Oh,yeah...美国我来啦~">行前准备之Oh,yeah...美国我</a><span class="fr">2015-02-07</span></p>
+        <p><span class="xh">6</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%AD%BE%E8%AF%81%E6%8C%87%E5%8D%97&amp;lxmdd=%E7%BE%8E%E5%9B%BD" title="美国留学-签证指南">【签证指南】</a><a href="http://beetle.org.cn/content-6-403-1.html" title="2015年美国留学签证申请流程及建议">2015年美国留学签证申请流程</a><span class="fr">2015-02-03</span></p>
+        <p><span class="xh">7</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E6%95%99%E8%82%B2%E4%BD%93%E5%88%B6&amp;lxmdd=%E7%BE%8E%E5%9B%BD" title="美国留学-教育体制">【教育体制】</a><a href="http://beetle.org.cn/content-6-395-1.html" title="揭秘美国名校里的那群学霸拼命读书内幕">揭秘美国名校里的那群学霸拼</a><span class="fr">2015-02-02</span></p>
+        <p><span class="xh">8</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E6%B5%B7%E5%A4%96%E7%94%9F%E6%B4%BB&amp;lxmdd=%E7%BE%8E%E5%9B%BD" title="美国留学-海外生活">【海外生活】</a><a href="http://beetle.org.cn/content-6-391-1.html" title="保守主义小卒的移民之路（一）----- 移，还是不移">保守主义小卒的移民之路（一</a><span class="fr">2015-02-07</span></p>
+        <p><span class="xh">9</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E6%B5%B7%E5%A4%96%E7%94%9F%E6%B4%BB&amp;lxmdd=%E7%BE%8E%E5%9B%BD" title="美国留学-海外生活">【海外生活】</a><a href="http://beetle.org.cn/content-6-390-1.html" title="美国留学，高薪就业">美国留学，高薪就业</a><span class="fr">2015-02-04</span></p>
+        <p><span class="xh">10</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E7%BE%8E%E5%9B%BD" title="美国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-384-1.html" title="美国工业设计专业简介及申请要求">美国工业设计专业简介及申请</a><span class="fr">2015-01-27</span></p>
+    </div>
+    <div class="lxzx_r fr ml20"> <a href="http://beetle.org.cn/content-9-2-1.html" title="普林斯顿大学"> <img src="images/20140914044506739.gif">
+        <p>普林斯顿大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-3-1.html" title="哈佛大学"> <img src="images/20140914044739594.jpg">
+        <p>哈佛大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-4-1.html" title="耶鲁大学"> <img src="images/20140914045402507.gif">
+        <p>耶鲁大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-5-1.html" title="斯坦福大学"> <img src="images/20140914055144936.gif">
+        <p>斯坦福大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-6-1.html" title="芝加哥大学"> <img src="images/20140914055511221.gif">
+        <p>芝加哥大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-7-1.html" title="哥伦比亚大学"> <img src="images/20140914055945913.gif">
+        <p>哥伦比亚大学</p>
+    </a> </div>
+    <div class="cb"></div>
+</ul>
+
+
+<!-----end-美国----->
+
+<ul class="hidden">
+    <div class="lxzx_1 fl"> <a href="http://beetle.org.cn/content-6-389-1.html" title="加拿大有名的艺术院校"><img src="images/20150131054707190.png"></a> <a href="http://beetle.org.cn/content-6-389-1.html" title="加拿大有名的艺术院校" class="a">加拿大有名的艺术院校</a>
+        <p>EmilyCarrUniversityofArt&amp;Design艾米里卡尔艺术与设计大学位于温哥华市中心。它是卑诗省老牌的高等学府之一，也是加拿大四大独立艺术院校 </p>
+    </div>
+
+    <div class="lxzx_m fl ml20">
+        <p><span class="xh">1</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%AD%BE%E8%AF%81%E6%8C%87%E5%8D%97&amp;lxmdd=%E5%8A%A0%E6%8B%BF%E5%A4%A7" title="加拿大留学-签证指南">【签证指南】</a><a href="http://beetle.org.cn/content-6-406-1.html" title="2015年加拿大留学签证面签技巧全解">2015年加拿大留学签证面签技</a><span class="fr">2015-02-04</span></p>
+        <p><span class="xh">2</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E5%8A%A0%E6%8B%BF%E5%A4%A7" title="加拿大留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-389-1.html" title="加拿大有名的艺术院校">加拿大有名的艺术院校</a><span class="fr">2015-01-31</span></p>
+        <p><span class="xh">3</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E5%8A%A0%E6%8B%BF%E5%A4%A7" title="加拿大留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-388-1.html" title="加拿大读书的最佳时间">加拿大读书的最佳时间</a><span class="fr">2015-01-31</span></p>
+        <p><span class="xh">4</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E5%8A%A0%E6%8B%BF%E5%A4%A7" title="加拿大留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-386-1.html" title="加拿大教育的好处">加拿大教育的好处</a><span class="fr">2015-01-31</span></p>
+        <p><span class="xh">5</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E5%8A%A0%E6%8B%BF%E5%A4%A7" title="加拿大留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-374-1.html" title="浅谈加拿大研究生文凭课程">浅谈加拿大研究生文凭课程</a><span class="fr">2015-01-05</span></p>
+        <p><span class="xh">6</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E5%8A%A0%E6%8B%BF%E5%A4%A7" title="加拿大留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-354-1.html" title="加拿大留学读本科的四种途径分析">加拿大留学读本科的四种途径</a><span class="fr">2014-12-16</span></p>
+        <p><span class="xh">7</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E5%8A%A0%E6%8B%BF%E5%A4%A7" title="加拿大留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-353-1.html" title="加拿大SPP计划详解">加拿大SPP计划详解</a><span class="fr">2014-12-16</span></p>
+        <p><span class="xh">8</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E4%B8%93%E4%B8%9A%E8%A7%A3%E8%AF%BB&amp;lxmdd=%E5%8A%A0%E6%8B%BF%E5%A4%A7" title="加拿大留学-专业解读">【专业解读】</a><a href="http://beetle.org.cn/content-6-338-1.html" title="文科生赴加拿大留学最易就业的专业">文科生赴加拿大留学最易就业</a><span class="fr">2014-12-01</span></p>
+        <p><span class="xh">9</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E5%8A%A0%E6%8B%BF%E5%A4%A7" title="加拿大留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-336-1.html" title="加拿大福利政策介绍2">加拿大福利政策介绍2</a><span class="fr">2014-11-30</span></p>
+        <p><span class="xh">10</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E5%8A%A0%E6%8B%BF%E5%A4%A7" title="加拿大留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-335-1.html" title="加拿大福利政策介绍1.">加拿大福利政策介绍1.</a><span class="fr">2014-11-30</span></p>
+    </div>
+    <div class="lxzx_r fr ml20"> <a href="http://beetle.org.cn/content-9-8-1.html" title="麦吉尔大学"> <img src="images/20140922112858463.gif">
+        <p>麦吉尔大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-9-1.html" title="多伦多大学"> <img src="images/20140922113252812.gif">
+        <p>多伦多大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-10-1.html" title="英属哥伦比亚大学"> <img src="images/20140922113810593.gif">
+        <p>英属哥伦比亚大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-14-1.html" title="加拿大女王大学"> <img src="images/20140922020001314.gif">
+        <p>加拿大女王大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-15-1.html" title="阿尔伯塔大学"> <img src="images/20140922020407676.gif">
+        <p>阿尔伯塔大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-16-1.html" title="麦克马斯特大学"> <img src="images/20140922020753664.gif">
+        <p>麦克马斯特大学</p>
+    </a> </div>
+    <div class="cb"></div>
+</ul>
+
+<!-----end-加拿大----->
+
+<ul class="hidden">
+    <div class="lxzx_1 fl"> <a href="http://beetle.org.cn/content-6-393-1.html" title="你所不知"英国人的55个特征""><img src="images/20150207102020228.jpg"></a> <a href="http://beetle.org.cn/content-6-393-1.html" title="你所不知"英国人的55个特征"" class="a">你所不知"英国人的55个特征"</a>
+        <p>1、 你喜欢以谈论天气作为话题的开始。2、 Sorry和thank you是你们的口头禅。3、 不管是否出于真心，你们喜欢使用表示称赞的词汇，经常 </p>
+    </div>
+    <div class="lxzx_m fl ml20">
+        <p><span class="xh">1</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E8%8B%B1%E5%9B%BD" title="英国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-402-1.html" title="2015年英国留学签证办理时间及步骤">2015年英国留学签证办理时间</a><span class="fr">2015-02-03</span></p>
+        <p><span class="xh">2</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E8%8B%B1%E5%9B%BD" title="英国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-400-1.html" title="英国留学读商科如何选校">英国留学读商科如何选校</a><span class="fr">2015-02-03</span></p>
+        <p><span class="xh">3</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E8%8B%B1%E5%9B%BD" title="英国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-399-1.html" title="英国留学五大"苦逼"专业">英国留学五大"苦逼"专业</a><span class="fr">2015-02-03</span></p>
+        <p><span class="xh">4</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E8%8B%B1%E5%9B%BD" title="英国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-398-1.html" title="英国留学热门专业如何选择">英国留学热门专业如何选择</a><span class="fr">2015-02-02</span></p>
+        <p><span class="xh">5</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E8%8B%B1%E5%9B%BD" title="英国留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-397-1.html" title="2015年英国留学奖学金申请条件">2015年英国留学奖学金申请条件</a><span class="fr">2015-02-02</span></p>
+        <p><span class="xh">6</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E8%8B%B1%E5%9B%BD" title="英国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-396-1.html" title="出国留学到底选择英国还是香港？">出国留学到底选择英国还是香</a><span class="fr">2015-02-02</span></p>
+        <p><span class="xh">7</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E6%B5%B7%E5%A4%96%E7%94%9F%E6%B4%BB&amp;lxmdd=%E8%8B%B1%E5%9B%BD" title="英国留学-海外生活">【海外生活】</a><a href="http://beetle.org.cn/content-6-393-1.html" title="你所不知"英国人的55个特征"">你所不知"英国人的55个特征</a><span class="fr">2015-02-07</span></p>
+        <p><span class="xh">8</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E6%95%99%E8%82%B2%E4%BD%93%E5%88%B6&amp;lxmdd=%E8%8B%B1%E5%9B%BD" title="英国留学-教育体制">【教育体制】</a><a href="http://beetle.org.cn/content-6-385-1.html" title="不得不知的英国大学上课模式">不得不知的英国大学上课模式</a><span class="fr">2015-01-30</span></p>
+        <p><span class="xh">9</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E9%99%A2%E6%A0%A1%E8%B5%84%E8%AE%AF&amp;lxmdd=%E8%8B%B1%E5%9B%BD" title="英国留学-院校资讯">【院校资讯】</a><a href="http://beetle.org.cn/content-6-377-1.html" title="解读英国"红砖大学"">解读英国"红砖大学"</a><span class="fr">2015-01-13</span></p>
+        <p><span class="xh">10</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E9%99%A2%E6%A0%A1%E8%B5%84%E8%AE%AF&amp;lxmdd=%E8%8B%B1%E5%9B%BD" title="英国留学-院校资讯">【院校资讯】</a><a href="http://beetle.org.cn/content-6-376-1.html" title="解密英国罗素大学集团">解密英国罗素大学集团</a><span class="fr">2015-01-13</span></p>
+    </div>
+    <div class="lxzx_r fr ml20"> <a href="http://beetle.org.cn/content-9-11-1.html" title="剑桥大学"> <img src="images/20140922114431284.gif">
+        <p>剑桥大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-12-1.html" title="牛津大学"> <img src="images/20140922115107350.png">
+        <p>牛津大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-13-1.html" title="伦敦政治经济学院"> <img src="images/20140922115535923.gif">
+        <p>伦敦政治经济学院</p>
+    </a> <a href="http://beetle.org.cn/content-9-17-1.html" title="帝国理工学院"> <img src="images/20140922021201597.gif">
+        <p>帝国理工学院</p>
+    </a> <a href="http://beetle.org.cn/content-9-18-1.html" title="杜伦大学"> <img src="images/20140922021559465.gif">
+        <p>杜伦大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-19-1.html" title="圣安德鲁斯大学"> <img src="images/20140922021853563.gif">
+        <p>圣安德鲁斯大学</p>
+    </a> </div>
+    <div class="cb"></div>
+</ul>
+
+<!-----end-英国----->
+
+<ul class="hidden">
+    <div class="lxzx_1 fl"> <a href="http://beetle.org.cn/content-6-314-1.html" title="专科生澳洲读研全攻略"><img src="images/20141117100920308.jpg"></a> <a href="http://beetle.org.cn/content-6-314-1.html" title="专科生澳洲读研全攻略" class="a">专科生澳洲读研全攻略</a>
+        <p>国内的专科学生能不能直接去澳洲读研究生呢？本文将为你全面解析。</p>
+    </div>
+    <div class="lxzx_m fl ml20">
+        <p><span class="xh">1</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%AD%BE%E8%AF%81%E6%8C%87%E5%8D%97&amp;lxmdd=%E6%BE%B3%E6%B4%B2" title="澳洲留学-签证指南">【签证指南】</a><a href="http://beetle.org.cn/content-6-401-1.html" title="澳洲留学签证类别——菜鸟秘籍">澳洲留学签证类别——菜鸟秘</a><span class="fr">2015-02-03</span></p>
+        <p><span class="xh">2</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E6%BE%B3%E6%B4%B2" title="澳洲留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-378-1.html" title="澳洲八大进入世界排名前一百！">澳洲八大进入世界排名前一百</a><span class="fr">2015-01-19</span></p>
+        <p><span class="xh">3</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E4%B8%93%E4%B8%9A%E8%A7%A3%E8%AF%BB&amp;lxmdd=%E6%BE%B3%E6%B4%B2" title="澳洲留学-专业解读">【专业解读】</a><a href="http://beetle.org.cn/content-6-366-1.html" title="澳洲留学者专业新选择：全球最具吸引力的十大"多金"行">澳洲留学者专业新选择：全球</a><span class="fr">2014-12-31</span></p>
+        <p><span class="xh">4</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%AD%BE%E8%AF%81%E6%8C%87%E5%8D%97&amp;lxmdd=%E6%BE%B3%E6%B4%B2" title="澳洲留学-签证指南">【签证指南】</a><a href="http://beetle.org.cn/content-6-365-1.html" title="澳大利亚留学关于签证新政和费用的相关">澳大利亚留学关于签证新政和</a><span class="fr">2014-12-31</span></p>
+        <p><span class="xh">5</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%AD%BE%E8%AF%81%E6%8C%87%E5%8D%97&amp;lxmdd=%E6%BE%B3%E6%B4%B2" title="澳洲留学-签证指南">【签证指南】</a><a href="http://beetle.org.cn/content-6-364-1.html" title="澳大利亚即将出台学生签证快速审批政策">澳大利亚即将出台学生签证快</a><span class="fr">2014-12-31</span></p>
+        <p><span class="xh">6</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%AD%BE%E8%AF%81%E6%8C%87%E5%8D%97&amp;lxmdd=%E6%BE%B3%E6%B4%B2" title="澳洲留学-签证指南">【签证指南】</a><a href="http://beetle.org.cn/content-6-363-1.html" title="澳大利亚最新签证政策有哪些新变化">澳大利亚最新签证政策有哪些</a><span class="fr">2014-12-31</span></p>
+        <p><span class="xh">7</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E4%B8%93%E4%B8%9A%E8%A7%A3%E8%AF%BB&amp;lxmdd=%E6%BE%B3%E6%B4%B2" title="澳洲留学-专业解读">【专业解读】</a><a href="http://beetle.org.cn/content-6-333-1.html" title="澳洲留学体检问题集锦">澳洲留学体检问题集锦</a><span class="fr">2014-11-28</span></p>
+        <p><span class="xh">8</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E6%BE%B3%E6%B4%B2" title="澳洲留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-332-1.html" title="澳洲购物留学旅游自贸协定益处多">澳洲购物留学旅游自贸协定益</a><span class="fr">2014-11-28</span></p>
+        <p><span class="xh">9</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E6%BE%B3%E6%B4%B2" title="澳洲留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-314-1.html" title="专科生澳洲读研全攻略">专科生澳洲读研全攻略</a><span class="fr">2014-11-17</span></p>
+        <p><span class="xh">10</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E6%BE%B3%E6%B4%B2" title="澳洲留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-312-1.html" title="专科生澳洲读本全攻略">专科生澳洲读本全攻略</a><span class="fr">2014-11-10</span></p>
+    </div>
+    <div class="lxzx_r fr ml20"> <a href="http://beetle.org.cn/content-9-160-1.html" title="墨尔本大学"> <img src="images/20150210055735743.jpg">
+        <p>墨尔本大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-161-1.html" title="新南威尔士大学"> <img src="images/20150211052935479.jpg">
+        <p>新南威尔士大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-162-1.html" title="昆士兰大学"> <img src="images/20150211053609353.jpg">
+        <p>昆士兰大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-163-1.html" title="澳大利亚国立大学"> <img src="images/20150211053832681.jpg">
+        <p>澳大利亚国立大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-164-1.html" title="莫纳什大学"> <img src="images/20150211054410367.jpg">
+        <p>莫纳什大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-165-1.html" title="迪肯大学"> <img src="images/20150211054659921.jpg">
+        <p>迪肯大学</p>
+    </a> </div>
+    <div class="cb"></div>
+</ul>
+
+<!-----end-澳洲----->
+
+<ul class="hidden">
+    <div class="lxzx_1 fl"> <a href="http://beetle.org.cn/content-6-246-1.html" title="申请德国大学的一般步骤"><img src="images/20140926022504230.jpg"></a> <a href="http://beetle.org.cn/content-6-246-1.html" title="申请德国大学的一般步骤" class="a">申请德国大学的一般步骤</a>
+        <p>导读下面简单介绍如何申请德国大学入学，主要介绍申请综合大学和应用科学大学的一般步骤。首先应了解详尽信息并确定自己的专业。事先获得详 </p>
+    </div>
+    <div class="lxzx_m fl ml20">
+        <p><span class="xh">1</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E5%BE%B7%E5%9B%BD" title="德国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-246-1.html" title="申请德国大学的一般步骤">申请德国大学的一般步骤</a><span class="fr">2014-09-26</span></p>
+        <p><span class="xh">2</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E5%BE%B7%E5%9B%BD" title="德国留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-244-1.html" title="高中生申请德国大学入学必须提交的材料">高中生申请德国大学入学必须</a><span class="fr">2014-09-26</span></p>
+        <p><span class="xh">3</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E5%BE%B7%E5%9B%BD" title="德国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-243-1.html" title="德国留学入学需要具备的条件以及对我国文凭的认可问题">德国留学入学需要具备的条件</a><span class="fr">2014-09-26</span></p>
+        <p><span class="xh">4</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E5%BE%B7%E5%9B%BD" title="德国留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-242-1.html" title="关于DSH考试">关于DSH考试</a><span class="fr">2014-09-26</span></p>
+        <p><span class="xh">5</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E6%95%99%E8%82%B2%E4%BD%93%E5%88%B6&amp;lxmdd=%E5%BE%B7%E5%9B%BD" title="德国留学-教育体制">【教育体制】</a><a href="http://beetle.org.cn/content-6-241-1.html" title="德国大学特色——学术自由">德国大学特色——学术自由</a><span class="fr">2014-09-26</span></p>
+        <p><span class="xh">6</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E5%BE%B7%E5%9B%BD" title="德国留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-232-1.html" title="德国留学：DAAD 奖学金">德国留学：DAAD 奖学金</a><span class="fr">2014-09-24</span></p>
+        <p><span class="xh">7</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E5%BE%B7%E5%9B%BD" title="德国留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-227-1.html" title="留学德国的几大注意事项">留学德国的几大注意事项</a><span class="fr">2014-09-24</span></p>
+        <p><span class="xh">8</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E5%BE%B7%E5%9B%BD" title="德国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-202-1.html" title="德国留学申请前的各项准备工作">德国留学申请前的各项准备工</a><span class="fr">2014-09-24</span></p>
+        <p><span class="xh">9</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E4%B8%93%E4%B8%9A%E8%A7%A3%E8%AF%BB&amp;lxmdd=%E5%BE%B7%E5%9B%BD" title="德国留学-专业解读">【专业解读】</a><a href="http://beetle.org.cn/content-6-152-1.html" title="留学德国的热门专业">留学德国的热门专业</a><span class="fr">2014-09-17</span></p>
+        <p><span class="xh">10</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E5%BE%B7%E5%9B%BD" title="德国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-151-1.html" title="德国留学优势">德国留学优势</a><span class="fr">2014-09-17</span></p>
+    </div>
+    <div class="cb"></div>
+</ul>
+
+<!-----end-德国----->
+
+<ul class="hidden">
+    <div class="lxzx_1 fl"> <a href="http://beetle.org.cn/content-6-228-1.html" title="怎样选择韩国大学？"><img src="images/20140924041145559.jpg"></a> <a href="http://beetle.org.cn/content-6-228-1.html" title="怎样选择韩国大学？" class="a">怎样选择韩国大学？</a>
+        <p>导读如何选择韩国大学？韩国大学近400所，分为国立、公立、私立。韩国的国立大学共10所，每个省设一所，都是以各个省份来命名（除首尔大学 </p>
+    </div>
+    <div class="lxzx_m fl ml20">
+        <p><span class="xh">1</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E9%9F%A9%E5%9B%BD" title="韩国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-255-1.html" title="详解韩国留学对语言的要求">详解韩国留学对语言的要求</a><span class="fr">2014-09-28</span></p>
+        <p><span class="xh">2</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E6%B5%B7%E5%A4%96%E7%94%9F%E6%B4%BB&amp;lxmdd=%E9%9F%A9%E5%9B%BD" title="韩国留学-海外生活">【海外生活】</a><a href="http://beetle.org.cn/content-6-251-1.html" title="韩国留学的生活情况介绍">韩国留学的生活情况介绍</a><span class="fr">2014-09-26</span></p>
+        <p><span class="xh">3</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E9%9F%A9%E5%9B%BD" title="韩国留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-228-1.html" title="怎样选择韩国大学？">怎样选择韩国大学？</a><span class="fr">2014-09-24</span></p>
+        <p><span class="xh">4</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E6%95%99%E8%82%B2%E4%BD%93%E5%88%B6&amp;lxmdd=%E9%9F%A9%E5%9B%BD" title="韩国留学-教育体制">【教育体制】</a><a href="http://beetle.org.cn/content-6-197-1.html" title="韩国教育制度">韩国教育制度</a><span class="fr">2014-09-23</span></p>
+        <p><span class="xh">5</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E7%BB%8F%E9%AA%8C&amp;lxmdd=%E9%9F%A9%E5%9B%BD" title="韩国留学-留学经验">【留学经验】</a><a href="http://beetle.org.cn/content-6-167-1.html" title="韩国留学流程以及所需文件">韩国留学流程以及所需文件</a><span class="fr">2014-09-23</span></p>
+        <p><span class="xh">6</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E9%9F%A9%E5%9B%BD" title="韩国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-125-1.html" title="韩国留学申请注意事项">韩国留学申请注意事项</a><span class="fr">2014-09-12</span></p>
+        <p><span class="xh">7</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E9%9F%A9%E5%9B%BD" title="韩国留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-124-1.html" title="韩国留学流程以及所需文件">韩国留学流程以及所需文件</a><span class="fr">2014-09-12</span></p>
+        <p><span class="xh">8</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E6%95%99%E8%82%B2%E4%BD%93%E5%88%B6&amp;lxmdd=%E9%9F%A9%E5%9B%BD" title="韩国留学-教育体制">【教育体制】</a><a href="http://beetle.org.cn/content-6-121-1.html" title="韩国语能力考试从2014年7月起全面改版">韩国语能力考试从2014年7月</a><span class="fr">2014-09-12</span></p>
+        <p><span class="xh">9</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E6%95%99%E8%82%B2%E4%BD%93%E5%88%B6&amp;lxmdd=%E9%9F%A9%E5%9B%BD" title="韩国留学-教育体制">【教育体制】</a><a href="http://beetle.org.cn/content-6-120-1.html" title="韩国留学课程与国内大学课程的区别">韩国留学课程与国内大学课程</a><span class="fr">2014-09-12</span></p>
+        <p><span class="xh">10</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E9%99%A2%E6%A0%A1%E8%B5%84%E8%AE%AF&amp;lxmdd=%E9%9F%A9%E5%9B%BD" title="韩国留学-院校资讯">【院校资讯】</a><a href="http://beetle.org.cn/content-6-117-1.html" title="2015年韩国留学热门院校推荐">2015年韩国留学热门院校推荐</a><span class="fr">2014-09-12</span></p>
+    </div>
+    <div class="lxzx_r fr ml20"> <a href="http://beetle.org.cn/content-9-154-1.html" title="首尔大学"> <img src="images/20150210050342626.jpg">
+        <p>首尔大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-155-1.html" title="韩国科学技术院"> <img src="images/20150210050744824.jpg">
+        <p>韩国科学技术院</p>
+    </a> <a href="http://beetle.org.cn/content-9-156-1.html" title="延世大学"> <img src="images/20150210051642438.jpg">
+        <p>延世大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-157-1.html" title="高丽大学"> <img src="images/20150210053622122.jpg">
+        <p>高丽大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-158-1.html" title="汉阳大学"> <img src="images/20150210054214687.jpg">
+        <p>汉阳大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-159-1.html" title="庆北大学"> <img src="images/20150210054627901.jpg">
+        <p>庆北大学</p>
+    </a> </div>
+    <div class="cb"></div>
+</ul>
+
+<!-----end-韩国----->
+
+<ul class="">
+    <div class="lxzx_1 fl"> <a href="http://beetle.org.cn/content-6-326-1.html" title="香港高校学术研究近八成达到国际水平"><img src="images/20141125040147691.jpg"></a> <a href="http://beetle.org.cn/content-6-326-1.html" title="香港高校学术研究近八成达到国际水平" class="a">香港高校学术研究近八成达到国际水平</a>
+        <p>香港大学教育资助委员会的大学研究评审结果显示，有近八成的香港学术研究成果达到国际水平。</p>
+    </div>
+    <div class="lxzx_m fl ml20">
+        <p><span class="xh">1</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E9%99%A2%E6%A0%A1%E8%B5%84%E8%AE%AF&amp;lxmdd=%E9%A6%99%E6%B8%AF" title="香港留学-院校资讯">【院校资讯】</a><a href="http://beetle.org.cn/content-6-326-1.html" title="香港高校学术研究近八成达到国际水平">香港高校学术研究近八成达到</a><span class="fr">2014-11-25</span></p>
+        <p><span class="xh">2</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E9%A6%99%E6%B8%AF" title="香港留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-302-1.html" title="香港高校不认内地英语六级，统一要求雅思">香港高校不认内地英语六级，</a><span class="fr">2014-11-06</span></p>
+        <p><span class="xh">3</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E9%A6%99%E6%B8%AF" title="香港留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-301-1.html" title="香港高校提高申请门槛,不认内地英语六级">香港高校提高申请门槛,不认</a><span class="fr">2014-11-05</span></p>
+        <p><span class="xh">4</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E9%A6%99%E6%B8%AF" title="香港留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-266-1.html" title="香港学生面试注意事项">香港学生面试注意事项</a><span class="fr">2014-09-29</span></p>
+        <p><span class="xh">5</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E9%A1%BB%E7%9F%A5&amp;lxmdd=%E9%A6%99%E6%B8%AF" title="香港留学-留学须知">【留学须知】</a><a href="http://beetle.org.cn/content-6-265-1.html" title="香港教育体制与英国教育体制的对比">香港教育体制与英国教育体制</a><span class="fr">2014-09-29</span></p>
+        <p><span class="xh">6</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E9%A6%99%E6%B8%AF" title="香港留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-233-1.html" title="关于香港留学几个热点问题解答">关于香港留学几个热点问题解</a><span class="fr">2014-09-24</span></p>
+        <p><span class="xh">7</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E4%B8%93%E4%B8%9A%E8%A7%A3%E8%AF%BB&amp;lxmdd=%E9%A6%99%E6%B8%AF" title="香港留学-专业解读">【专业解读】</a><a href="http://beetle.org.cn/content-6-213-1.html" title="香港留学语言专业申请指南">香港留学语言专业申请指南</a><span class="fr">2014-09-24</span></p>
+        <p><span class="xh">8</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E4%B8%93%E4%B8%9A%E8%A7%A3%E8%AF%BB&amp;lxmdd=%E9%A6%99%E6%B8%AF" title="香港留学-专业解读">【专业解读】</a><a href="http://beetle.org.cn/content-6-188-1.html" title="香港留学申请专业特别注意事项">香港留学申请专业特别注意事</a><span class="fr">2014-09-23</span></p>
+        <p><span class="xh">9</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E9%A6%99%E6%B8%AF" title="香港留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-187-1.html" title="香港留学的海关通关流程介绍">香港留学的海关通关流程介绍</a><span class="fr">2014-09-23</span></p>
+        <p><span class="xh">10</span> <a href="http://beetle.org.cn/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=6&amp;lxfl=%E7%95%99%E5%AD%A6%E6%94%BB%E7%95%A5&amp;lxmdd=%E9%A6%99%E6%B8%AF" title="香港留学-留学攻略">【留学攻略】</a><a href="http://beetle.org.cn/content-6-186-1.html" title="香港留学的高性价比体现在哪里？">香港留学的高性价比体现在哪</a><span class="fr">2014-09-23</span></p>
+    </div>
+    <div class="lxzx_r fr ml20"> <a href="http://beetle.org.cn/content-9-148-1.html" title="香港大学"> <img src="images/20150210025739799.jpg">
+        <p>香港大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-149-1.html" title="香港中文大学"> <img src="images/20150210040118107.jpg">
+        <p>香港中文大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-150-1.html" title="香港理工大学"> <img src="images/20150210040731581.jpg">
+        <p>香港理工大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-151-1.html" title="香港科技大学"> <img src="images/20150210043924813.jpg">
+        <p>香港科技大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-152-1.html" title="香港城市大学"> <img src="images/20150210044242712.jpg">
+        <p>香港城市大学</p>
+    </a> <a href="http://beetle.org.cn/content-9-153-1.html" title="香港浸会大学"> <img src="images/20150210044932502.jpg">
+        <p>香港浸会大学</p>
+    </a> </div>
+    <div class="cb"></div>
+</ul>
+
+<!-----end-香港----->
+</div>

@@ -1,0 +1,4 @@
+#! /usr/bin/sh
+javac Twitter.java
+java Twitter
+rm *.class

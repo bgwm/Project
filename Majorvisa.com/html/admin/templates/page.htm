@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{$lang.home}{if $ur_here} - {$ur_here} {/if}</title>
+<meta name="Copyright" content="1ze Design." />
+<link href="templates/public.css" rel="stylesheet" type="text/css">
+{include file="javascript.htm"}
+</head>
+<body>
+<div id="dcWrap">
+ {include file="header.htm"}
+ <div id="dcLeft">{include file="menu.htm"}</div>
+ <div id="dcMain">
+   {include file="ur_here.htm"}
+   <div id="mainBox">
+    <h3><a href="{$action_link.href}" class="actionBtn">{$action_link.text}</a>{$ur_here}</h3>
+    <!-- {if $rec eq 'default'} 单页面列表 -->
+    <div class="page">
+     <!-- {foreach from=$page_list item=page_list} -->
+      <dl{if $page_list.level gt 0} class="child{$page_list.level}"{/if}>
+        <dt><strong>{$page_list.page_name}</strong><p>{$page_list.unique_id}</p></dt>
+        <dd><a href="page.php?rec=edit&id={$page_list.id}">{$lang.edit}</a> | <a href="page.php?rec=del&id={$page_list.id}">{$lang.del}</a></dd>
+      </dl>
+     <!-- {/foreach} -->
+    </div>
+    <!-- {/if} -->
+    <!-- {if $rec eq 'add' || $rec eq 'edit'} 单页面添加或编辑 -->
+    <form enctype="multipart/form-data" action="page.php?rec={$form_action}" method="post">
+     <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+      <tr>
+       <td width="80" align="right">{$lang.page_name}</td>
+       <td>
+        <input type="text" name="page_name" value="{$page.page_name}" size="40" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td align="right">{$lang.unique}</td>
+       <td>
+        <input type="text" name="unique_id" value="{$page.unique_id}" size="40" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td align="right">{$lang.parent}</td>
+       <td>
+        <select name="parent_id">
+         <option value="0">{$lang.empty}</option>
+									<!-- {foreach from=$page_list item=list} -->
+         <!-- {if $list.id eq $page.parent_id} -->
+         <option value="{$list.id}" selected="selected">{$list.mark} {$list.page_name}</option>
+         <!-- {else} -->
+         <option value="{$list.id}">{$list.mark} {$list.page_name}</option>
+         <!-- {/if} -->
+									<!-- {/foreach} -->
+        </select>
+       </td>
+      </tr>
+         <tr>
+             <td align="right">页面Banner</td>
+             <td>
+                 <input type="file" name="banner" size="38" class="inpFlie"/>
+                 {if $banner}<img src="images/yes.gif"><a href="{$banner}" target="_blank"><img width="140px" height="36px" src="{$banner_thumb}"></a>{else}<img src="images/no.gif">{/if}</td>
+             </td>
+         </tr>
+         <tr>
+             <td align="right">页面类型</td>
+             <td>
+                 <select name="page_type" onchange="change(this.value)" {if $page.type eq "page_normal" or $page.type eq "page_image"}disabled{/if}>
+                     <option value="page_normal" {if $page.type eq "page_normal"}selected="selected"{/if}>普通单页</option>
+                     <option value="page_image" {if $page.type eq "page_image"}selected="selected"{/if}>图片列表页</option>
+                 </select>
+                 {if $page.type eq "page_normal" or $page.type eq "page_image"}* 仅在新建单页面时可选{/if}
+             </td>
+         </tr>
+      <tr>
+       <td align="right">{$lang.page_content}</td>
+       <td id="content_type">
+           {include file="inc/page_normal.htm"}
+           <div id="page_image" style="display: none">
+               <iframe id="page_image_iframe" src="image.php?temp_num={$temp_num}&page_id={$page.id}"  width="100%" height="0" scrolling="no" frameborder="0" onload="this.height=this.contentWindow.document.documentElement.scrollHeight" ></iframe>
+           </div>
+       </td>
+      </tr>
+      <tr>
+       <td align="right">{$lang.keywords}</td>
+       <td>
+        <input type="text" name="keywords" value="{$page.keywords}" size="90" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td align="right">{$lang.description}</td>
+       <td>
+        <input type="text" name="description" value="{$page.description}" size="90" class="inpMain" />
+       </td>
+      </tr>
+      <tr>
+       <td></td>
+       <td>
+        <input type="hidden" name="token" value="{$token}" />
+        <input type="hidden" name="id" value="{$page.id}" />
+           <input type="hidden" name="page_temp_num" value="{$temp_num}" />
+        <input name="submit" class="btn" type="submit" value="{$lang.btn_submit}" />
+       </td>
+      </tr>
+     </table>
+    </form>
+    <!-- {/if} -->
+   </div>
+ </div>
+ {include file="footer.htm"}
+ </div>
+<script type="text/javascript">
+
+    {literal}
+    function na(names){
+        var str = "";
+        for(var i in names){
+            if(document.getElementsByName(names[i])[0]){
+                str += "&" + names[i] + "=" + document.getElementsByName(names[i])[0].value;
+            }else{
+                str += "";
+            }
+        }
+        return str;
+    }
+
+    function change(a){
+        var content_type = document.getElementById("content_type");
+        var divArray = content_type.getElementsByTagName("div");
+        for (var i=0;i<divArray.length;i++) {
+            if (divArray[i].id == a) {
+                divArray[i].style.display='block';
+                if(divArray[i].id == "page_normal")//单页是js代码，无法重新加载代码，所以只能用页面重载的方法，以后需要解决这个问题
+                {
+                    //window.location.reload();
+                    //window.location.href = window.location.href + tn;//刷新的时候传递temp_num,防止新增时误点单页页面类型时丢失刚上传的图片信息。注：getElementsByName是数组，getElementById是单数，所以要加[0]
+
+                    var wlh = window.location.href;
+
+                    if (wlh.indexOf('rec=add')>0){//只在新增时可以自动切换模板
+                        var tn = (window.location.href.indexOf('temp_num')>0)?'':('&temp_num=' + document.getElementsByName("page_temp_num")[0].value);//检测当前地址是否已经包含temp_num信息，如果有则不再重新生成，防止多次连接相同信息
+                        //var  old_value = "&title=" + na("title") + "&defined=" + na("defined") + "&image=" + na("image") + "&keywords=" + na("keywords") + "&description=" + na("description");
+                        var myElements = new Array("page_name", "unique_id", "parent_id", "content", "keywords", "description");
+                        var old_value = na(myElements);
+                        window.location.href = wlh + tn + old_value;
+                    }
+                }
+            }else {
+                divArray[i].style.display='none';
+            }
+
+        }
+    }
+
+    function reinitIframe(){//iframe自动动态适应变化高度
+        var iframe = document.getElementById("page_image_iframe");
+        try{
+            var bHeight = iframe.contentWindow.document.body.scrollHeight;
+            var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+            var height = Math.max(bHeight, dHeight);
+            iframe.height =  height;
+        }catch (ex){}
+    }
+    window.setInterval("reinitIframe()", 100);//动态检测
+    {/literal}
+
+    if("{$page.type}"!="page_normal" && "{$page.type}"!="")change("{$page.type}");//载入时自动切换页面类型
+
+</script>
+</body>
+</html>

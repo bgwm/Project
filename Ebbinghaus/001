@@ -1,0 +1,10 @@
+Linklist:
+	- push()
+	- length()
+	- build123()
+	- deleteList()
+	- insertN()
+	- count()
+	- getNth()
+	- pop()		
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="{$keywords}" />
+    <meta name="description" content="{$description}" />
+    <title>{$page_title}</title>
+    <link rel="stylesheet" href="css/global.css" type="text/css" />
+    <link href="css/mb_base.css" rel="stylesheet" type="text/css">
+    <link href="css/mb_index.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-1.js"></script>
+
+</head>
+
+<body>
+
+<!------header------>
+<div class="head">
+    {include file="inc/header.tpl"}
+    <div class="clears"></div>
+</div><!--end-header-->
+<div class="clears"></div>
+<div id="page-banner" style="background: url(images/page-banner-2.jpg) no-repeat"></div>
+
+<div class="page-cont">
+
+    <div class="page-dt">
+        <p class="page-title">{$cate_info.cat_name}</p>
+    </div>
+
+    <div class="page-dt">
+        <div class="page-text">
+
+            {include file="inc/article_category.tpl"}
+
+            {include file="inc/pager.tpl"}
+
+        </div><!--end-page-text-->
+    </div><!--end-page-dt-->
+</div><!--end-page-cont-->
+
+
+<!--底部-->
+<div class="flooter">
+{include file="inc/footer.tpl"}
+</div>
+</body>
+</html>

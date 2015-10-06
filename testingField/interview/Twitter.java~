@@ -1,0 +1,123 @@
+class Twitter {
+
+	public int solution() {
+	
+		
+
+
+
+
+	}
+
+
+
+
+
+	public void __test1__ (int[] A) {
+
+		System.out.println("-------");
+		solution(A, A.length-1);
+	}
+
+	public void test1() {
+
+			__test1__(new int[]{1,2,3});
+
+	}
+	public static void main(String[] args) {
+
+		Twitter twitter = new Twitter();
+
+		twitter.test1();
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

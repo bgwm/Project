@@ -1,0 +1,284 @@
+\documentclass[8pt, letterpaper]{article}
+
+\title{HAOLONG NING}
+\pagestyle{empty}
+%\usepackage{fullpage}
+%\usepackage[margin=0.8in, letterpaper]{geometry}
+\usepackage[margin=0.6in, letterpaper]{geometry}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{ulem}
+\headheight=0pt
+%\headsep=0pt
+%\topmargin=-20pt
+
+\begin{document}
+
+
+\begin{center}
+\Large{\scshape Haolong Ning}\\
+\small %9 Mounts Rd, Stony Brook, New York, NY-1.790\\
+%29 Mounts Rd, Stony Brook, NY, 1.790\\
+Homepage: {\ttfamily \small http://54.201.225.195/People/N.Haolong/}\\
+\small Email: {\ttfamily \small Haolong\_Ning@yahoo.com} \\
+%\small Email: {\ttfamily \small Ning.Haolong@gmail.com} \\
+Mobile: {\ttfamily \small (631)742-8105} 
+\end{center}
+
+
+\vspace{-8mm}
+%\paragraph{EDUCATION}\ \vspace{1mm}\\
+\paragraph{EDUCATION}\ \vspace{1mm}\\
+%\paragraph{\uline{EDUCATION \hspace*{\fill}}}\ \vspace{1mm}\\
+
+%\begin{itemize}
+%\uline{a}
+
+\vspace{-5mm}
+	\indent\;{\bf \small STONY\;BROOK\;UNIVERSITY}\\ 
+	\indent\indent\;
+	{\bf \small M.S.} {\small in Computer Science} 
+		{\small \textit{BS/MS 5 years program}}
+	\hfill {\footnotesize Aug, 2012 - Dec, 2013}\\
+%\vspace{-1.5mm}
+	\indent\indent\,\,
+	{\bf \small B.E. }{\small in Computer Science \& }
+	{\bf \small B.E. }{\small in Applied Mathematics and Statistics}
+	%	{\small \bf 3.38$^{+}$/4.0}
+		\hfill {\footnotesize Aug, 2010 - May, 2012}\\
+	
+	\begin{list}{$\triangleright$}
+		{\leftmargin=5em}\vspace{-1.3\baselineskip} 
+		
+		\item \small {\bf Core Courses:} 
+		{\small Database Systems, Software Engineering, Security, 
+			Algorithms, Programming in UNIX/C, User Interface, 
+			Computational Geometry, Differential Equations, 
+			Numerical Analysis, Probability Theory}
+	\end{list}
+
+
+\vspace{-5mm}
+\paragraph{TECHNICAL SKILLS}\ \vspace{-2mm}
+\begin{tabbing}
+	\indent\;\;{\small Elementary proficiency:}\;\;\;\;\;\;  
+		\= {\small Java, {\footnotesize C}, Python}\\
+
+	\indent\;\;{\small Limit working experience:} 
+		\> {{\footnotesize HTML, XHTML, CSS}, 
+			Javascript, Linux, {\footnotesize UNIX}, 
+			Objective-C}\\
+
+	\indent\;\;{\small General knowledge:}       
+		\> {\small Shell Scripts, Git, {\footnotesize CVS, SVN}, 
+			Matlab, make, {\footnotesize SQL} Scripting}
+\end{tabbing}
+
+
+\vspace{-3mm}
+\paragraph{EXPERIENCE}\ \vspace{-1.3\baselineskip}\\
+\begin{itemize}
+
+\item {\bf \small Web Developer}, 
+	{\small \textit{International Academic Programs and Services Office, 
+				Stony Brook University}}
+	\hfill{\footnotesize Aug, 2012 - Jan, 2014}\\ \small
+- Designed and implemented websites using {\ttfamily HTML, CSS}, and 
+	{\ttfamily JQuery (http://www.stonybrook.edu/studyabroad/)}.\\
+- Developed and maintained program details among different system, assess 
+  computing needs and system requirements.
+
+\item {\bf \small Teaching Assistant}, 
+	{\small \textit{Intro to Algorithm, Intro to Java}} 
+	\hfill{\footnotesize Jan, 2012 - May, 2012}\\ \small
+- Assisted over 30 students in computer lab every week and helped over 
+	$90\%$ of students finish weekly lab assignments\\
+- Correct over 100 student assignments and grade examinations \\
+- Provided TA hours over 2 hours per week and gained great feedbacks 
+	from students 
+\end{itemize}
+
+
+\vspace{-3mm}
+\paragraph{CLASS PROJECTS}\ \vspace{-1.5mm}
+\begin{itemize}
+
+%------------------------------------------------------------------------------
+{
+	\vspace{1mm}	
+	\item {\bf \small {\textit{Fricke}} Polynomial Generator}
+		\hfill{\small \ttfamily Java, Algorithm}\\\small 
+	\vspace{-7mm}\small
+	\begin{tabbing}
+		- \= Significant reduced calculation overhead for researchers 
+			to generate huge {\textit{Fricke}} polynomial.\\
+		- \> Designed an algorithm to simplify {\textit{Fricke}} 
+			polynomial relations and implemented a java program 
+			to generate it. \\
+		- \> Search "{\ttfamily Fricke Polynomial}" in Google, choose 
+			second content to check details.\\
+	\end{tabbing}
+}
+
+%------------------------------------------------------------------------------
+{
+	\vspace{-6mm}
+	\item {\bf \small CIA Mapper Project, User Interface}, 
+		\hfill{\small \ttfamily Java, Design Pattern, SDLC}\\
+	\vspace{-7mm}\small
+	\begin{tabbing}
+		- \= Designed and implemented large-scale java project that 
+			mapping metadata to world map along fully subsidiary 
+			functions \\
+		  \> \; such as zoom in/out, color re-rendering, profile, 
+			etc..\\
+		- \> Adapted memento, template, observer, factory method, 
+			and MVC patterns to project and achieved great \\
+		  \> \; experience of GUI development. \\  
+	\end{tabbing}
+}
+
+%------------------------------------------------------------------------------
+{
+	\vspace{-6mm}
+	\item {\bf \small Memory Violation Detection and Portable Project}, 
+	      \hfill{\small \ttfamily C, gcc, git, autotools, 
+					shell Script, sed, make} \\
+	\vspace{-7mm}\small
+	\begin{tabbing}
+		- \= Developed programs that detected $20^+$ various 
+			C bugs ({\footnotesize SIGBUS, SIGV, etc.}) which 
+			regular {\footnotesize GCC} fail to.\\
+		- \> Adapted a user-level file encryption program 
+			{\ttfamily S/key} to three different {\footnotesize 
+			UNIX} platforms, writing shell scripts, {\footnotesize 
+			M4} marco, \\
+		  \> \; and makefile templates to automatically 
+			generate C code headers (similar to autotool).\\
+	\end{tabbing}
+}
+
+%------------------------------------------------------------------------------
+{
+	\vspace{-6mm}
+	\item {\bf \small Apache Script-Nonce Module Project}, 
+	      \hfill{\small \ttfamily C, Apache} \\
+	\vspace{-7mm}\small 
+	\begin{tabbing}
+		- \= Designed and implemented an Apache module to automatically 
+		     insert script nonces into Content Security Policy 
+		     (CSP).\\
+	
+		- \> Successfully prevents reflected and stored cross-site 
+			scripting (XSS) attacks, project mainly focus on 
+			preventing \\ 
+		  \> \; {\ttfamily javascript} code hijacking. \\ 
+		\end{tabbing}
+}
+
+%------------------------------------------------------------------------------
+{	
+	\vspace{-6mm}\small
+	\item {\bf \small Social Networking Web Application}, 
+	      \hfill{\small \ttfamily Java, Java Bean, JSP, XML, HTML, css} \\
+	\vspace{-7mm}\small 
+	\begin{tabbing}
+		- \= Developed simple social networking web application with 
+			fundamental functions such as making post, making\\
+		  \> \; comments, joining group, distributing ads and others. \\
+  		- \> Project built based on {\ttfamily HTML, CSS, JSP} 
+			(front side) and {\ttfamily JSP, 
+			java bean, and DB2} (Back end).\\
+	\end{tabbing}
+}
+
+%------------------------------------------------------------------------------
+{
+	\vspace{-6mm}
+	\item {\bf \small Graduate Admission Evaluation (GARS)}, 
+	      \hfill{\small \ttfamily Gwt(Google Web Toolkit), Java} \\
+	\vspace{-7mm}\small 
+	\begin{tabbing}
+		- \= Designed and implemented {\textit{graduate admission 
+			evaluation program}} {\footnotesize (GARS)} by 
+			{\ttfamily Google web toolkit ({\footnotesize GWT})} 
+			and {\ttfamily Java}.\\
+		- \> Achieved great teamwork experience and make great UI/UX 
+			contribution, particularly on GUI development.\\ 
+	\end{tabbing}
+}
+
+%------------------------------------------------------------------------------
+{
+	\vspace{-6mm}
+	\item {\bf \small Word and Picture Clustering},
+		\hfill{\small \ttfamily Matlab, Python}\\
+	\vspace{-7mm}\small
+	\begin{tabbing}
+
+		- \= Implemented Naive Bayes classifier training program to 
+			train images with text descriptions.\\
+		- \> Achieved great knowledge of natural language processing 
+			and computer vision.\\
+	\end{tabbing}
+}
+%------------------------------------------------------------------------------
+\end{itemize}
+
+
+
+\vspace{-3mm}
+%\paragraph{\uline{HONORS \hspace*{\fill}}}\ \vspace{-1.5\baselineskip}\\
+\paragraph{HONORS}\ \vspace{-1.5\baselineskip}\\
+\begin{itemize}\addtolength{\itemsep}{-0.4\baselineskip}
+\vspace{0.7mm}
+\item {\small Harriet McFadden Memorial Scholarship}
+	\hfill{\footnotesize Aug, 2010 - Jun, 2011} \vspace{-1mm}
+\item {\small Member of ACM Stony Brook Computing Society} 
+	\hfill{\footnotesize Aug, 2011 - Present \;\;\;\,}\vspace{-1mm} 
+\item {\small Member of Phi Eta Sigma, {\textit{National Honor Society}}} 
+	\hfill{\footnotesize Aug, 2009 - Present \;\;\;\,}\vspace{-1mm}
+\item {\small Second Place Award of National Mathematics Competition 
+	{\small \textit{(China)}},} \hfill{\footnotesize  2004 
+		\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;} 
+	\vspace{-0.2\baselineskip}\\
+\end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

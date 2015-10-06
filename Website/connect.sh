@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# as well as: 
+#	ec2-user@ec2-54-174-130-68.compute-1.amazonaws.com
+DIR="ec2-user@54.165.97.70"
+HTML="/var/www/html"
+PUB_KEY="NG.pem"
+FLAG=$1
+FROM=$2
+TO=$3
+
+clear
+
+if [ "$FLAG" = "login" ]; then
+	echo "ssh -i $PUB_KEY $DIR"
+	ssh -i $PUB_KEY $DIR 
+fi
+
+if [ "$FLAG" = "u" ]; then
+	scp -i $PUB_KEY $FROM $DIR:$HTML/$TO
+fi
+
+if [ "$FLAG" = "d" ]; then
+	scp -i $PUB_KEY $DIR:$HTML/$FROM $TO
+fi
+
+if [ "$FLAG" = "uploadAll" ]; then
+	scp -i $PUB_KEY *.html $DIR:$HTML/$FROM
+	scp -i $PUB_KEY *.css $DIR:$HTML/$FROM/css
+fi
+
+if [ "$FLAG" = "h" ]; then
+	echo "connect.sh [OPTIONS: u/d/login/h/uploadAll] [FROM] [TO]" 
+fi
+
+echo --- end of connection --
+echo

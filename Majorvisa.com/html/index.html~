@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0034)http://www.majorvisa.com/index.php -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="keywords" content="留学,移民,商旅">
+    <meta name="description" content="美桥是一家专业从事留学、移民等境外业务的机构。公司地处长沙市最繁华的商业地段——万达广场，拥有十年以上的工作经验的资深留学、移民顾问专家及海归精英。">
+    <title>美桥留学移民</title>
+    <link rel="stylesheet" href="./theme/meiqiao/css/global.css" type="text/css">
+    <link rel="stylesheet" href="./theme/meiqiao/css/mb_base.css" type="text/css">
+    <link rel="stylesheet" href="./theme/meiqiao/css/mb_index.css" type="text/css">
+
+    <script type="text/javascript" src="./theme/meiqiao/js/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="./theme/meiqiao/js/index.js"></script>
+    <script type="text/javascript" src="./theme/meiqiao/js/jquery-1.js"></script>
+
+    <script>
+        
+        //选项卡
+        function setTab(m,n){
+            var tli=document.getElementById("menu"+m).getElementsByTagName("li");
+            var mli=document.getElementById("main"+m).getElementsByTagName("ul");
+            for(i=0;i       <tli.length;i++){
+                tli[i].className=i==n?"hover":"";
+                mli[i].style.display=i==n?"block":"none";
+            }
+        }
+        
+    </script>
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+<body>
+
+<!------header------>
+<div class="head">
+
+<div class="menu">
+    <div class="logo"></div>
+    <!--搜索-->
+    <div class="top_left_tp">
+        <img src="./theme/meiqiao/images/top-tel.gif">
+        <p>留学梦想专线：</p>
+        <p class="top-tel">400-6767-630</p>
+    </div>
+
+    <ul id="nav">
+                        <li><a href="http://www.majorvisa.com/">首页</a>
+                                </li>
+
+                        <li><a href="http://www.majorvisa.com/aboutus.html">关于我们</a>
+                                    <ul>
+                                <li><a href="http://www.majorvisa.com/aboutus.html">公司介绍</a></li>
+                                <li><a href="http://www.majorvisa.com/honer.html">荣誉资质</a></li>
+                                <li><a href="http://www.majorvisa.com/recruit.html">招贤纳才</a></li>
+                            </ul>
+                </li>
+
+                        <li><a href="http://www.majorvisa.com/news/news">新闻动态</a>
+                                    <ul>
+                                <li><a href="http://www.majorvisa.com/news/company">公司新闻</a></li>
+                                <li><a href="http://www.majorvisa.com/news/industry">行业动态</a></li>
+                            </ul>
+                </li>
+
+                                <li><a href="http://www.majorvisa.com/index.php#">服务中心</a>
+                            <ul>
+                                <li><a href="http://www.majorvisa.com/product/study-abroad">留学服务</a></li>
+                                <li><a href="http://www.majorvisa.com/product/migrate">移民服务</a></li>
+                                <li><a href="http://www.majorvisa.com/product/business">商旅服务</a></li>
+                            </ul>
+                </li>
+
+                        <li><a href="http://www.majorvisa.com/case.html">成功案例</a>
+                                </li>
+
+                        <li><a href="http://www.majorvisa.com/contactus.html">联系我们</a>
+                                </li>
+
+            </ul>
+
+</div><!--end-menu-->
+
+    <div class="clears"></div>
+</div><!--end-header-->
+<div class="clears"></div>
+
+<!-----------banner------------>
+<div class="banner">
+<div id="demo01" class="flexslider" style="background: url(http://www.majorvisa.com/data/slide/20130514acunaubannbgbanner1.jpg)">
+        <ul class="slides">
+        <li><div class="img"></div></li>
+    </ul>
+    <div class="nav_1"></div>
+    <div class="nav_2">
+        <div class="part1"><h1>关于美桥</h1><p>ABOUT US</p></div>
+        <div class="part2">
+            <p>美桥是一家专业从事留学、移民等境外业务的机构。公司地处长沙市最繁华的商业地段——万达广场，拥有十年以上的工作经验的资深留学、移民顾问专家及海归精英。</p>
+        </div>
+        <div style="float:right">
+                                    <a href="http://www.majorvisa.com/product/study-abroad" class="part3"><img width="45" height="45" src="./theme/meiqiao/images/part2-1.png"><p>留学服务</p></a>
+                                                                                                <a href="http://www.majorvisa.com/product/migrate" class="part3"><img width="45" height="45" src="./theme/meiqiao/images/part2-2.png"><p>移民服务</p></a>
+                                                                                                <a href="http://www.majorvisa.com/product/business" class="part3"><img width="45" height="45" src="./theme/meiqiao/images/part2-3.png"><p>商旅服务</p></a>
+                                                                                                <a href="http://www.majorvisa.com/case.html" class="part3"><img width="45" height="45" src="./theme/meiqiao/images/part2-4.png"><p>成功案例</p></a>
+                                </div>
+        
+    </div>
+</div><!--flexslider end-->
+
+<script type="text/javascript" src="./theme/meiqiao/js/slider.js"></script>
+<script type="text/javascript">
+    
+    $(function(){
+
+        $('#demo01').flexslider({
+            animation: "slide",
+            direction:"horizontal",
+            easing:"swing"
+        });
+
+    });
+    
+</script></div><!--end-banner-->
+
+
+<div class="fgx3"></div><!---大标题--->
+
+<div class="conter" style="height:350px">
+<div class="index_x w">
+
+<div class="tabbox w1000 bc mt30">
+
+<div class="tabmenu1 w h70">
+    <ul>
+        <li onmouseover="tabChange(this,&#39;indexlxzx&#39;)" class=""><a href="http://www.majorvisa.com/product/study-abroad/40.html"><span class="cglx_mg">美国</span></a></li>
+        <li class="" onmouseover="tabChange(this,&#39;indexlxzx&#39;)"><a href="http://www.majorvisa.com/product/study-abroad/41.html"><span class="cglx_jnd">加拿大</span></a></li>
+        <li class="" onmouseover="tabChange(this,&#39;indexlxzx&#39;)"><a href="http://www.majorvisa.com/product/study-abroad/44.html"><span class="cglx_yg">英国</span></a></li>
+        <li class="" onmouseover="tabChange(this,&#39;indexlxzx&#39;)"><a href="http://www.majorvisa.com/product/study-abroad/42.html"><span class="cglx_adly">澳洲</span></a></li>
+        <li class="" onmouseover="tabChange(this,&#39;indexlxzx&#39;)"><a href="http://www.majorvisa.com/product/study-abroad/45.html"><span class="cglx_dg">意大利</span></a></li>
+        <li class="cli" onmouseover="tabChange(this,&#39;indexlxzx&#39;)"><a href=""><span class="cglx_hg">韩国</span></a></li>
+        <li class="" onmouseover="tabChange(this,&#39;indexlxzx&#39;)"><a href="http://www.majorvisa.com/product/study-abroad/43.html"><span class="cglx_xg">新西兰</span></a></li>
+    </ul>
+</div><!-----end-国旗切换----->
+
+<div class="cb"></div>
+
+<div class="w mt10">
+</div><!-----end-分栏标题----->
+
+<div class="cb"></div>
+
+<div id="indexlxzx" class="tab_c w pb20 mt10">
+<!-----下方内容----->
+<ul class="hidden" name="tabul">
+    <div class="lxzx_1 fl">
+        <img src="./theme/meiqiao/images/pic-mg.jpg" style="border-radius: 5px;">
+    </div>
+
+    <div class="lxzx_m fl ml20">
+        <div class="title-js">留学优势：<a href="http://www.majorvisa.com/product/study-abroad/40.html">more</a></div>
+        <div class="text-js">世界顶尖学校的聚集地，众多名校可供学生任意选择。奖学金种类繁多，满足不同学生的需求。
+            特有的OPT政策增加毕业后的实习与就业机会。
+            无语言成绩也可申请入学，入学周期灵活，可最大程度地节约时间。
+        </div>
+    </div>
+
+
+    <div class="lxzx_r fr ml20">
+        <div class="title-js">著名院校：</div>
+        <a><img src="./theme/meiqiao/images/20140914044506739.gif">
+            <p>普林斯顿大学</p>
+        </a><a><img src="./theme/meiqiao/images/20140914044739594.jpg">
+        <p>哈佛大学</p>
+        </a><a><img src="./theme/meiqiao/images/20140914045402507.gif">
+        <p>耶鲁大学</p></a>
+     </div>
+    <div class="cb"></div>
+</ul>
+
+
+<!-----end-美国----->
+
+<ul class="hidden">
+    <div class="lxzx_1 fl">
+        <img src="./theme/meiqiao/images/pic-jnd.jpg" style="border-radius: 5px;">
+    </div>
+
+    <div class="lxzx_m fl ml20">
+        <div class="title-js">留学优势：<a href="http://www.majorvisa.com/product/study-abroad/41.html">more</a></div>
+        <div class="text-js">英联邦成员国之一，教育体系世界公认优秀。
+            无需语言成绩，快速申请进百所国际公认学历的公立大学
+            留学性价比高，国际生可享受学费泛海政策
+            毕业即可获得三年工作签证，留学移民利好政策频出。
+            良好的社会治安，优美的自然风光，多次被评为最适合人类居住的国家。
+
+        </div>
+    </div>
+
+
+    <div class="lxzx_r fr ml20">
+        <div class="title-js">著名院校：</div>
+        <a><img src="./theme/meiqiao/images/20140922020753664.gif">
+            <p>麦克马斯特大学</p>
+        </a><a><img src="./theme/meiqiao/images/20140922020407676.gif">
+        <p>阿尔伯塔大学</p>
+        </a><a><img src="./theme/meiqiao/images/20140922020001314.gif">
+        <p>加拿大女王大学</p></a>
+    </div>
+    <div class="cb"></div>
+</ul>
+
+<!-----end-加拿大----->
+
+<ul class="hidden">
+    <div class="lxzx_1 fl">
+        <img src="./theme/meiqiao/images/pic-yg.jpg" style="border-radius: 5px;">
+    </div>
+
+    <div class="lxzx_m fl ml20">
+        <div class="title-js">留学优势：<a href="http://www.majorvisa.com/product/study-abroad/44.html">more</a></div>
+        <div class="text-js">教育水准高，云集世界众多顶级云霄，文凭国际认可，
+            留学生福利晚上，留学签证超半年即可享受英国政府提供的免费医疗服务，
+            百余所大学可供学生任意选择，留学时间短，性价比高，
+            纯正的英语母语国家，历史悠久，
+            可合法打工且回报高。
+        </div>
+    </div>
+
+
+    <div class="lxzx_r fr ml20">
+        <div class="title-js">著名院校：</div>
+        <a> <img src="./theme/meiqiao/images/20140922021853563.gif">
+            <p>圣安德鲁斯大学</p>
+        </a><a><img src="./theme/meiqiao/images/20140922021559465.gif">
+        <p>杜伦大学</p>
+        </a><a><img src="./theme/meiqiao/images/20140922021201597.gif">
+        <p>帝国理工学院</p></a>
+     </div>
+    <div class="cb"></div>
+</ul>
+
+<!-----end-英国----->
+
+<ul class="hidden">
+    <div class="lxzx_1 fl">
+        <img src="./theme/meiqiao/images/pic-adly.jpg" style="border-radius: 5px;">
+    </div>
+
+    <div class="lxzx_m fl ml20">
+        <div class="title-js">留学优势：<a id="more-js" href="http://www.majorvisa.com/product/study-abroad/42.html">more</a></div>
+        <div class="text-js">高质量生活水平，全球竞争力排名第九，在世界舞台彰显实力，澳洲八大名校全部进入世界200强，领先世界的教育体系，
+            友善和谐的多远社会，安全祥和的生活环境，
+            无种族歧视，鼓励留学生移民，
+            签证手续快捷方便，一次性可获得四年留学签证。
+
+        </div>
+    </div>
+
+
+    <div class="lxzx_r fr ml20">
+        <div class="title-js">著名院校：</div>
+        <a> <img src="./theme/meiqiao/images/20150211054659921.jpg">
+            <p>迪肯大学</p>
+        </a><a><img src="./theme/meiqiao/images/20150211054410367.jpg">
+        <p>莫纳什大学</p>
+        </a><a><img src="./theme/meiqiao/images/20150211053832681.jpg">
+        <p>澳大利亚国立大学</p></a>
+ </div>
+    <div class="cb"></div>
+</ul>
+
+<!-----end-澳洲----->
+
+<ul class="hidden">
+    <div class="lxzx_1 fl">
+        <img src="./theme/meiqiao/images/pic-ydl.jpg" style="border-radius: 5px;">
+    </div>
+
+    <div class="lxzx_m fl ml20">
+        <div class="title-js">留学优势：<a href="http://www.majorvisa.com/product/study-abroad/45.html">more</a></div>
+        <div class="text-js">世界顶尖学校的聚集地，众多名校可供学生任意选择。奖学金种类繁多，满足不同学生的需求。
+            特有的OPT政策增加毕业后的实习与就业机会。
+            无语言成绩也可申请入学，入学周期灵活，可最大程度地节约时间。
+        </div>
+    </div>
+
+
+    <div class="lxzx_r fr ml20">
+        <div class="title-js">著名院校：</div>
+        <a> <img src="./theme/meiqiao/images/ydl-bsdx.png">
+            <p>比萨大学</p>
+        </a><a><img src="./theme/meiqiao/images/ydl-mldx.png">
+        <p>罗马第一大学</p>
+        </a><a><img src="./theme/meiqiao/images/ydl-lmdy.png">
+        <p>米兰大学</p></a>
+    </div>
+    <div class="cb"></div>
+</ul>
+
+<!-----end-意大利----->
+
+<ul class="">
+    <div class="lxzx_1 fl">
+        <img src="./theme/meiqiao/images/pic-hg.jpg" style="border-radius: 5px;">
+    </div>
+
+    <div class="lxzx_m fl ml20">
+        <div class="title-js">留学优势：<a href="http://www.majorvisa.com/index.php#">more</a></div>
+        <div class="text-js">世界顶尖学校的聚集地，众多名校可供学生任意选择。奖学金种类繁多，满足不同学生的需求。
+            特有的OPT政策增加毕业后的实习与就业机会。
+            无语言成绩也可申请入学，入学周期灵活，可最大程度地节约时间。
+        </div>
+    </div>
+
+
+    <div class="lxzx_r fr ml20">
+        <div class="title-js">著名院校：</div>
+        <a><img src="./theme/meiqiao/images/20150210054627901.jpg">
+            <p>庆北大学</p>
+        </a><a><img src="./theme/meiqiao/images/20150210054214687.jpg">
+        <p>汉阳大学</p>
+        </a><a><img src="./theme/meiqiao/images/20150210053622122.jpg">
+        <p>高丽大学</p></a>
+     </div>
+    <div class="cb"></div>
+</ul>
+
+<!-----end-韩国----->
+
+<ul class="hidden">
+    <div class="lxzx_1 fl">
+        <img src="./theme/meiqiao/images/pic-xxl.jpg" style="border-radius: 5px;">
+    </div>
+
+    <div class="lxzx_m fl ml20">
+        <div class="title-js">留学优势：<a href="http://www.majorvisa.com/product/study-abroad/43.html">more</a></div>
+        <div class="text-js">教育体制富有活力，水平优秀，学制灵活，学历全球认可，学习、生活环境好，学费和生活费用低，担保资金少，
+            无需托福/雅思成绩即可入学，专业设置多样，
+            合法的校内打工，
+            签证快捷，通过率高，
+            留学生可享受医疗、保险等各种优惠待遇。
+        </div>
+    </div>
+
+
+    <div class="lxzx_r fr ml20">
+        <div class="title-js">著名院校：</div>
+       <a> <img src="./theme/meiqiao/images/20150330123639.png">
+            <p>坎特伯雷大学</p>
+        </a> <a> <img src="./theme/meiqiao/images/20150330123703.png">
+        <p>坎特伯雷大学</p>
+        </a><a><img src="./theme/meiqiao/images/20150330123752.png">
+        <p>林肯大学</p></a>
+        
+  </div>
+    <div class="cb"></div>
+
+</ul>
+
+<!-----end-新西兰----->
+
+</div>
+</div>
+</div>
+</div>
+
+<!--end-conter-->
+
+
+<!--底部-->
+<div class="flooter">
+    <div class="flooter_c">
+
+    <div class="flooter_left links">
+        <ul class="foot-left-tp">
+                        <li class="link-title"><a href="http://www.majorvisa.com/">首页</a></li>
+                        <li class="link-title"><a href="http://www.majorvisa.com/about_us.html">关于我们</a></li>
+                        <li class="link-title"><a href="http://www.majorvisa.com/news/news">新闻动态</a></li>
+                        <li class="link-title"><a href="http://www.majorvisa.com/product/study-abroad">服务中心</a></li>
+                        <li class="link-title"><a href="http://www.majorvisa.com/case.html">成功案例</a></li>
+                        <li class="link-title"><a href="http://www.majorvisa.com/contactus.html">联系我们</a></li>
+                    </ul>
+
+        <div class="foot-left-bt">
+            <p>关注我们：</p>
+            <img src="./theme/meiqiao/images/foot-left-1.png">
+            <img src="./theme/meiqiao/images/foot-left-2.png">
+        </div>
+    </div>
+
+    <div class="flooter_right">
+        <div class="flooter_con"></div>
+        <p>您的专属留学移民机构</p>
+        <p>TEL:400-6767-630（服务热线）</p>
+        <p>ADD:长沙市开福区湘江中路589号万达广场写字楼B座15楼（中国）</p>
+        <p class="copy" style="white-space:nowrap;">Copyright© 2014 美桥留学移民. All Rights Reserved.</p>
+    </div>
+    <div class="clears"></div>
+        <div style="display:none"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254740733'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1254740733' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1254740733"><a href="http://www.cnzz.com/stat/website.php?web_id=1254740733" target="_blank" title="站长统计">站长统计</a></span><script src="./theme/meiqiao/images/gstat.php" type="text/javascript"></script><script src="./theme/meiqiao/css/core.php" charset="utf-8" type="text/javascript"></script></div>
+    </div>
+<link href="./theme/meiqiao/css/float.css" type="text/css" rel="stylesheet">
+<div class="right_activ">
+    <div class="activ_box2">
+        <ul>
+            <li><img src="./theme/meiqiao/images/61b9a1eeb2ed68af.jpg"></li>
+            <!--<li id="video-bg"><div id="sp-video"></div></li>-->
+            <li id="kftc-bg">
+                <a id="kftc" href="http://wpa.qq.com/msgrd?v=3&uin=2493472013&site=majorvisa.com&menu=yes"></a>
+                <a id="kftc" href="http://wpa.qq.com/msgrd?v=3&uin=&site=majorvisa.com&menu=yes"></a>
+                <a id="kftc" href="http://wpa.qq.com/msgrd?v=3&uin=&site=majorvisa.com&menu=yes"></a>
+            </li>
+            <li><img src="./theme/meiqiao/images/0b0251a0ffb33f91.jpg"></li>
+        </ul>
+    </div>
+</div></div>
+
+
+</body><div></div></html>

@@ -1,0 +1,310 @@
+\documentclass{article}
+
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
+\usepackage{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} command for typesetting SI units
+\usepackage{multicol}
+\usepackage{listings} % Provides the \SI{}{} command for typesetting SI units
+\lstset {
+tabsize=1,
+basicstyle=\bf\footnotesize\ttfamily
+}
+
+
+
+
+\usepackage{graphicx} % Required for the inclusion of images
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+\usepackage{times} % Uncomment to use the Times New Roman font
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Android Fuzzing Tool\\CSE509 Final Project Report} % Title
+
+\author{Haolong Ning\\Yubin Lai\\Ruonan Hao} % Author name
+
+\date{\today} % Date for the report
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+
+\begin{center}
+\begin{tabular}{l r}
+Date Performed: & November 20, 2013 \\ % Date the experiment was performed
+Instructor: & Professor Rob Johnson % Instructor/supervisor
+\end{tabular}
+\end{center}
+
+% If you wish to include an abstract, uncomment the lines below
+% \begin{abstract}
+% Abstract text
+% \end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Objective}
+
+To determine the atomic weight of magnesium via its reaction with oxygen and to study the stoichiometry of the reaction (as defined in \ref{definitions}):\\
+
+\begin{center}\ce{2 Mg + O2 -> 2 MgO}\end{center}
+
+% If you have more than one objective, uncomment the below:
+%\begin{description}
+%\item[First Objective] \hfill \\
+%Objective 1 text
+%\item[Second Objective] \hfill \\
+%Objective 2 text
+%\end{description}
+
+\subsection{Definitions}
+\label{definitions}
+\begin{description}
+\item[Stoichiometry]
+The relationship between the relative quantities of substances taking part in a reaction or forming a compound, typically a ratio of whole integers.
+\item[Atomic mass]
+The mass of an atom of a chemical element expressed in atomic mass units. It is approximately equivalent to the number of protons and neutrons in the atom (the mass number) or to the average number allowing for the relative abundances of different isotopes. 
+\end{description} 
+ 
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Experimental Data}
+
+\begin{tabular}{ll}
+Mass of empty crucible & \SI{7.28}{g}\\
+Mass of crucible and magnesium before heating & \SI{8.59}{g}\\
+Mass of crucible and magnesium oxide after heating & \SI{9.46}{g}\\
+Balance used & \#4\\
+Magnesium from sample bottle & \#1
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 3
+%----------------------------------------------------------------------------------------
+
+\section{Sample Calculation}
+
+\begin{tabular}{ll}
+Mass of magnesium metal & = \SI{8.59}{g} - \SI{7.28}{g}\\
+& = \SI{1.31}{g}\\
+Mass of magnesium oxide & = \SI{9.46}{g} - \SI{7.28}{g}\\
+& = \SI{2.18}{g}\\
+Mass of oxygen & = \SI{2.18}{g} - \SI{1.31}{}\\
+& = \SI{0.87}{g}
+\end{tabular}\\
+Because of this reaction, the required ratio is the atomic weight of magnesium: \SI{16.00}{g} of oxygen as experimental mass of Mg: experimental mass of oxygen or $\frac{x}{1.31}=\frac{16}{0.87}$ from which, $M_{\ce{Mg}} = 16.00 \times \frac{1.31}{0.87} = 24.1 = \SI{24}{g/mol}$ (to two significant figures).
+
+
+\section{Design}
+we create a multi-thread program that recursively track build inner object type
+ by Java reflection technique. The design included following three parts\\:
+
+\subsection{Part I}
+Program will start from here (Part I), it will generate multiple thread to 
+execute Part II and Part III. On our program, we use set up the maxium number 
+of thread to be 20, as the speed of Android emulator tested in our environment
+ is limited. Of course, android fuzzer is initially design for much number 
+(2000 thread or more) as long as the hardware resource is powerful enough. \\
+
+\subsection{Part II} 
+After program generate a thread, it will goes into second part (Part II). 
+Each thread, will repeat Part II and Part III exactly same. The more thread 
+we generate, the more randomlazion we have, and more possible to find out 
+bugs among API. For each thread will fall into following stages:
+
+\subsubsection{Stage I}
+Get a package name (API) from user. We designed in this way that it's user's 
+resonpsiblity to provide the correct API. Sepecifically, we chose 
+{\bf \small \ttfamily Java.io.*} as our testing package. We maintained a table 
+for all the classes inside this package: \\
+
+{\bf \small \ttfamily
+\begin{tabular} {ll}
+	Java.io.BufferedInputStream  & Java.io.BufferedOutputStream \\
+	Java.io.BufferedReader & Java.io.BufferedWriter \\
+	Java.io.ByteArrayInputStream & Java.io.ByteArrayOutputStream \\
+	Java.io.CharArrayReader & Java.io.CharArrayWriter \\
+	Java.io.Console & Java.io.DataInputStream \\
+	Java.io.DataOoutputStream & Java.io.File \\
+	Java.io.File & Java.io.FileDescriptor \\
+	Java.io.FileInputStream & Java.io.FileOutputStream \\
+	Java.io.FilePermission & Java.io.FileReader \\
+	Java.io.FileWriter & Java.io.InputStream \\
+	Java.io.InputStreamReader & Java.io.LineNumberInputStream \\
+	Java.io.LineNumberReader & Java.io.ObjectInputStream \\
+	Java.io.ObjectInputStream.GetField & Java.io.ObjectOutputStream \\
+	Java.io.ObjectOutputStream & Java.io.ObjectOutputStream.putField \\
+	Java.io.ObjectStreamClass & Java.io.ObjectStreamField \\
+	Java.io.OutputStream & Java.io.OutputStreamWriter \\
+	Java.io.PipedInputStream & Java.io.PipedOutputStream \\
+	Java.io.PipedReader & Java.io.PipedWriter \\
+	Java.io.PushBackInputStream & Java.io.PushBackReader \\
+	Java.io.RandomAccessFile & Java.io.Reader \\
+	Java.io.SequenceInputStream & Java.io.SeriallzeablePermission \\
+	Java.io.StreamTokenizer & Java.io.StringBufferInputStream \\
+	Java.io.StringReader & Java.io.StringWriter \\
+	Java.io.Writer & ~ \\ \\
+\end{tabular} }
+
+However, for further work, it should be available 
+for any package. As the number of package increased, the size of table
+will also increased respectfully. 
+Since the table of classes are maintained manually and time constrained, we 
+first target on {\bf \small \ttfamily Java.io.File} sepecifically. 
+For completely version, It will contain all classes.\\
+
+\subsubsection{Stage II} 
+Randomly pick up a class that inside the 
+selected package, take {\bf \small \ttfamily Java.io.File} as example,  
+create a the corresponding object for this class. Each class contains one or 
+more than one constructors: \\ \\
+{\bf \small \ttfamily
+\begin{tabular} {l}
+File(File parent, String child) \\
+File(String pathname) \\
+File(String parent, String child) \\
+File(URI uri)\\
+\end{tabular} } \\
+
+ We used Java reflection to get all these constructors and randomly 
+pick up one of them, Though this constructor, we initailize a 
+instance (Object) for this class. \\
+{\bf \small \ttfamily
+\begin{tabular}{l}
+... \\
+Class c = c.forName(Java.io.File); \\
+Constructors cons = c.getConstructors();\\
+Constructor constructor = cons[random(cons.size() - 1];\\
+Object obj = constructor.getInstance();\\
+...
+\end{tabular} } \\
+
+After we initialized a instance of this class, we can first get all the methods
+ associated with this class, and then randomly pick one to test:\\
+{\bf \small \ttfamily 
+\begin{tabular}{l}
+...\\
+Method[] methods = obj.getMethods();\\
+Method method = methods[random(methods.size() - 1];\\
+method.invoke(...);\\
+...\\
+\end{tabular} } \\
+upon this point, we finished Stage II, that pick up one path to test among 
+mutilple choice by reflection.\\
+
+\subsubsection{Stage III}
+It is very common that to initialize one class or one method need 
+another class (object). We recursively repeat stage I and stage II to get 
+instance of those class in order to invoke the method successfully. 
+For example, a method under 
+{\bf \small \ttfamily Java.io.File:\\ \\
+\begin{tabular}{l}
+int compareTo(File pathname)
+\end{tabular}
+}\\ \\
+To test {\bf\small\ttfamily compareTo} method, we have to first 
+pass a {\bf \small \ttfamily File} object. Repeat Stage I and Stage II:\\ \\
+1) get constructors of {\bf \small \ttfamily File} Class; \\
+2) randomly pick up one among those constructors; \\
+3) create a new instance through this constructor;\\
+4) and finally pass this new instance to the method. \\ \\
+Since to get a real 
+instance, we may have to keep repeating Stage I and Stage II mutilple time, we 
+build method recusrively handle those steps until we hit the basic type. 
+In order 
+words, this recursively call won't terminate until we hit the basic type, 
+and this will be the end of Part II. \\
+
+\paragraph{Part III}
+So far, the program will be able to generate a thread to randomly pick a method
+ to test, based on a randomly chosen class, and it will recursively initailize
+ new instance type until it hit the basic type. 
+After one thread hit the basic type, program will goes into another path, that 
+pick up a value from pre-defined table and feed it back to the caller. Those 
+basic type defined as following types: {\bf \small \ttfamily 
+String, int, double, float, short, byte, long, boolean, File, URI} for testing 
+{\bf \small \ttfamily Java.io.File} class, sepecifically. For numerical type, 
+our random value will come from 5 kind of specific case: Maxium positive 
+value, minium positive value, 0, minium negative value, maxium negative value. 
+Take {\bf \small \ttfamily double} as example, those values will be: \\ \\
+{\bf \small \ttfamily 
+\begin{tabular}{lll}
++Double.getMaxValue() & +Double.getMinValue() & 0 \\
+-Double.getMinValue() & -Double.getMaxValue() & ~ \\
+\end{tabular} } \\\\
+Above case including: {\bf \small \ttfamily int, double, float, short, byte, 
+long}. For type {\bf \small \ttfamily String} we handled following cases:
+\begin{multicols}{2}
+\lstinputlisting[language=Java, firstline=27, lastline=114]{AbsType.java}
+\end{multicols}
+Since we focus on {\bf\small\ttfamily Java.io.File} as our intial testing case, 
+we also create treat {\bf\small\ttfamily File} as our basic type. We generate 
+lots of file at beginning and store them in a array. We build methods for help 
+us handle this, each method will response for one type of file:
+\lstinputlisting[language=Java, firstline=38, lastline=55]{FileGenerator.java}
+For most of them is easy to understand from their name, same explain below:
+
+\subparagraph{\bf\small\ttfamily gen\_MutipleLevelFile()$\backslash$gen\_MutipleLevelDir()} 
+These two methods will create a file or directory within 15 level:
+{\bf\small\ttfamily
+\begin{tabular}{l}
+level\_1$\backslash$level\_2$\backslash$...$\backslash$level
+\_15$\backslash$file\\
+\end{tabular}}. \\
+
+\subparagraph{\bf\small\ttfamily gen\_WeiredNameFile()$\backslash$gen\_WeiredNameDir()} 
+These two methods will create a file or directory with weird name:
+
+\lstinputlisting[language=Java, firstline=27, lastline=114]{AbsType.java}
+
+
+d\\
+
+
+
+\section{Discussion of Experimental Uncertainty}
+
+The accepted value (periodic table) is \SI{24.3}{g/mol} \cite{Smith:2012qr}. The percentage discrepancy between the accepted value and the result obtained here is 1.3\%. Because only a single measurement was made, it is not possible to calculate an estimated standard deviation. \\
+
+The most obvious source of experimental uncertainty is the limited precision of the balance. Other potential sources of experimental uncertainty are: the reaction might not be complete; if not enough time was allowed for total oxidation, less than complete oxidation of the magnesium might have, in part, reacted with nitrogen in the air (incorrect reaction); the magnesium oxide might have absorbed water from the air, and thus weigh ``too much." Because the result obtained is close to the accepted value it is possible that some of these experimental uncertainties have fortuitously cancelled one another.
+
+%----------------------------------------------------------------------------------------
+%	SECTION 6
+%----------------------------------------------------------------------------------------
+
+\section{Answers to Definitions}
+
+\begin{enumerate}
+\begin{item}
+The \emph{atomic weight of an element} is the relative weight of one of its atoms compared to C-12 with a weight of 12.0000000$\ldots$, hydrogen with a weight of 1.008, to oxygen with a weight of 16.00. Atomic weight is also the average weight of all the atoms of that element as they occur in nature.
+\end{item}
+\begin{item}
+The \emph{units of atomic weight} are two-fold, with an identical numerical value. They are g/mole of atoms (or just g/mol) or amu/atom.
+\end{item}
+\begin{item}
+\emph{Percentage discrepancy} between an accepted (literature) value and an experimental value is $\frac{|\mathrm{experimental result} - \mathrm{accepted result}|}{\mathrm{accepted result}}$.
+\end{item}
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\bibliographystyle{unsrt}
+
+\bibliography{sample}
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}

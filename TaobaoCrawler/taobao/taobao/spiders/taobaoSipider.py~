@@ -1,0 +1,51 @@
+#-*- coding: UTF-8 -*-
+import scrapy
+import codecs
+from scrapy.selector import Selector
+from scrapy.http.request import Request
+import json
+
+# http://store.taobao.com/shop/view_shop.htm?user_number_id = $USRID
+
+class taobaoSpider(scrapy.Spider):
+	name = "taobaoSpider"
+	keyword = '''苹果表带'''
+	# URL  = '''http://s.taobao.com/search?q=''' + keyword + '''&uniq=shop&sort=sale-desc&bcoffset=0&s='''
+	URL  = '''http://s.taobao.com/search?q=''' + keyword + '''&uniq=shop&sort=sell-desc&bcoffset=0&s='''
+	# start_urls = [URL + str(i*15) for i in range(5)]
+	start_urls = [URL + str(25*15)]
+	
+
+	# Origanl File iso-8859-15
+	def parse(self, resp):
+		sel = Selector(resp)
+		s = sel.xpath('//script[5]/text()').extract()
+		filename = "5taobaoStore.txt" 
+
+		with codecs.open(filename, 'a', encoding='utf-8-sig') as f: 
+
+			pageConfig = s[-1].split("};\n")[0] + "}"
+
+			# <JSON Data Structure>
+			js = json.loads(pageConfig.split("=")[1])
+		
+			# init sellers with index available 
+			allNids = js['mainInfo']['traceInfo']['traceData']['allNids']
+			sconfig = {k:{} for k in allNids}
+			index = dict(zip(allNids, range(15)))
+			for k in sconfig:
+				sconfig[k]['index'] = index[k]
+
+			sellers = js['mods']['itemlist']['data']['sellers']
+			for s in sellers:
+				sconfig[s['nid']]['user_id'] = s['user_id']
+				sconfig[s['nid']]['nick'] = s['nick']
+				sconfig[s['nid']]['shopLink'] = s['shopLink']
+
+			# print sconfig
+			l = ""
+			for nid in sconfig:
+				l = l + sconfig[nid]['nick'] + '\n'
+			f.write(l)
+			
+			

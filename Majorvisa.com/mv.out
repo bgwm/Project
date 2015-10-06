@@ -1,0 +1,474 @@
+-- MySQL dump 10.13  Distrib 5.5.43, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: majorvisa.com
+-- ------------------------------------------------------
+-- Server version	5.5.43-0+deb8u1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `dou_admin`
+--
+
+DROP TABLE IF EXISTS `dou_admin`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_admin` (
+  `user_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(60) NOT NULL DEFAULT '',
+  `email` varchar(60) NOT NULL DEFAULT '',
+  `password` varchar(32) NOT NULL DEFAULT '',
+  `action_list` text NOT NULL,
+  `add_time` int(11) NOT NULL DEFAULT '0',
+  `last_login` int(11) NOT NULL DEFAULT '0',
+  `last_ip` varchar(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`user_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_admin`
+--
+
+LOCK TABLES `dou_admin` WRITE;
+/*!40000 ALTER TABLE `dou_admin` DISABLE KEYS */;
+INSERT INTO `dou_admin` VALUES (1,'admin','','bb11474424098ea60f9cce732276233e','ALL',1418493805,1429153722,'119.39.22.17'),(3,'majorvisaadmin','','17765dcbe8974e2cd6c90cdc89323620','ADMIN',1427993005,1436252689,'175.0.250.110');
+/*!40000 ALTER TABLE `dou_admin` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_admin_log`
+--
+
+DROP TABLE IF EXISTS `dou_admin_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_admin_log` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `create_time` int(10) unsigned NOT NULL DEFAULT '0',
+  `user_id` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `action` varchar(255) NOT NULL DEFAULT '',
+  `ip` varchar(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  KEY `create_time` (`create_time`),
+  KEY `user_id` (`user_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=60 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_admin_log`
+--
+
+LOCK TABLES `dou_admin_log` WRITE;
+/*!40000 ALTER TABLE `dou_admin_log` DISABLE KEYS */;
+INSERT INTO `dou_admin_log` VALUES (1,1427998838,1,'数据备份: D20150403T022027.sql','175.10.213.190'),(2,1428024197,3,'管理员登录: 登录成功！','113.240.37.89'),(3,1428054045,1,'管理员登录: 登录成功！','119.39.8.63'),(4,1428377239,3,'管理员登录: 登录成功！','175.0.250.8'),(5,1428377713,3,'编辑服务: 意大利','175.0.250.8'),(6,1428378009,3,'编辑服务: 意大利','175.0.250.8'),(7,1428378357,3,'编辑服务: 英国','175.0.250.8'),(8,1428378615,3,'编辑服务: 英国','175.0.250.8'),(9,1428388747,3,'编辑服务: 美国','175.0.250.8'),(10,1428388905,3,'编辑服务: 美国','175.0.250.8'),(11,1428389026,3,'编辑服务: 美国','175.0.250.8'),(12,1428390012,3,'编辑服务: 澳大利亚','175.0.250.8'),(13,1428390396,3,'编辑服务: 加拿大','175.0.250.8'),(14,1428390539,3,'编辑服务: 加拿大','175.0.250.8'),(15,1428390761,3,'编辑服务: 美国','175.0.250.8'),(16,1428390809,3,'编辑服务: 美国','175.0.250.8'),(17,1428392161,3,'管理员登录: 登录成功！','175.0.250.8'),(18,1428392827,3,'编辑服务: 美国','175.0.250.8'),(19,1428394564,1,'管理员登录: 登录成功！','119.39.8.63'),(20,1428397890,3,'编辑单页面: 成功案例','175.0.250.8'),(21,1428475288,1,'管理员登录: 登录成功！','173.255.223.23'),(22,1428475378,1,'编辑服务: 美国','173.255.223.23'),(23,1428477896,1,'系统设置: 编辑成功','104.200.25.113'),(24,1428478042,1,'系统设置: 编辑成功','173.255.223.23'),(25,1428565926,1,'管理员登录: 登录成功！','119.39.11.158'),(26,1428565934,1,'系统设置: 编辑成功','119.39.11.158'),(27,1428631854,3,'管理员登录: 登录成功！','175.0.251.101'),(28,1428633763,1,'管理员登录: 登录成功！','119.39.11.158'),(29,1428634604,3,'编辑服务: 加拿大','175.0.251.101'),(30,1428634797,3,'编辑服务: 英国','175.0.251.101'),(31,1428635621,3,'编辑服务: 澳大利亚','175.0.251.101'),(32,1428635885,3,'编辑服务: 意大利','175.0.251.101'),(33,1428636087,3,'编辑服务: 新西兰','175.0.251.101'),(34,1428637660,3,'编辑服务: 美国','175.0.251.101'),(35,1428650498,1,'管理员登录: 登录成功！','119.39.11.158'),(36,1428650595,1,'编辑服务: 美国','119.39.11.158'),(37,1428650687,1,'编辑服务: 美国','119.39.11.158'),(38,1428650819,1,'编辑服务: 美国','119.39.11.158'),(39,1428650888,1,'编辑服务: 美国','119.39.11.158'),(40,1428650915,1,'编辑服务: 美国','119.39.11.158'),(41,1428650974,1,'编辑服务: 美国','119.39.11.158'),(42,1428650996,1,'编辑服务: 美国','119.39.11.158'),(43,1428651120,1,'编辑服务: 美国','119.39.11.158'),(44,1428651252,1,'编辑服务: 美国','119.39.11.158'),(45,1428653178,3,'编辑单页面: 成功案例','175.0.251.101'),(46,1428653400,3,'管理员登录: 登录成功！','175.0.251.101'),(47,1428653465,3,'编辑单页面: 成功案例','175.0.251.101'),(48,1428655175,1,'编辑单页面: 公司介绍','119.39.11.158'),(49,1428914533,1,'管理员登录: 登录成功！','119.39.22.17'),(50,1428915399,1,'添加服务: 希腊','119.39.22.17'),(51,1428915814,1,'添加服务: 西班牙','119.39.22.17'),(52,1428916115,1,'添加服务: 葡萄牙','119.39.22.17'),(53,1428916973,1,'编辑服务: 葡萄牙','119.39.22.17'),(54,1428917020,1,'编辑服务: 葡萄牙','119.39.22.17'),(55,1428917196,1,'编辑服务: 希腊','119.39.22.17'),(56,1428917314,1,'编辑服务: 西班牙','119.39.22.17'),(57,1429004224,1,'管理员登录: 登录成功！','119.39.22.17'),(58,1429153722,1,'管理员登录: 登录成功！','119.39.22.17'),(59,1436252689,3,'管理员登录: 登录成功！','175.0.250.110');
+/*!40000 ALTER TABLE `dou_admin_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_article`
+--
+
+DROP TABLE IF EXISTS `dou_article`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_article` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `cat_id` smallint(5) NOT NULL DEFAULT '0',
+  `title` varchar(150) NOT NULL DEFAULT '',
+  `defined` text NOT NULL,
+  `content` longtext NOT NULL,
+  `image` varchar(255) NOT NULL DEFAULT '',
+  `keywords` varchar(255) NOT NULL DEFAULT '',
+  `add_time` int(10) unsigned NOT NULL DEFAULT '0',
+  `click` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `description` varchar(255) NOT NULL DEFAULT '',
+  `home_sort` varchar(2) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_article`
+--
+
+LOCK TABLES `dou_article` WRITE;
+/*!40000 ALTER TABLE `dou_article` DISABLE KEYS */;
+/*!40000 ALTER TABLE `dou_article` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_article_category`
+--
+
+DROP TABLE IF EXISTS `dou_article_category`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_article_category` (
+  `cat_id` smallint(5) NOT NULL AUTO_INCREMENT,
+  `unique_id` varchar(30) NOT NULL DEFAULT '',
+  `cat_name` varchar(255) NOT NULL DEFAULT '',
+  `keywords` varchar(255) NOT NULL DEFAULT '',
+  `description` varchar(255) NOT NULL DEFAULT '',
+  `parent_id` smallint(5) NOT NULL DEFAULT '0',
+  `sort` tinyint(1) unsigned NOT NULL DEFAULT '50',
+  PRIMARY KEY (`cat_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_article_category`
+--
+
+LOCK TABLES `dou_article_category` WRITE;
+/*!40000 ALTER TABLE `dou_article_category` DISABLE KEYS */;
+INSERT INTO `dou_article_category` VALUES (1,'news','新闻动态','新闻动态公司动态','新闻动态',0,10),(3,'company','公司新闻','公司新闻','公司新闻',1,50),(4,'industry','行业动态','行业动态','行业动态',1,50);
+/*!40000 ALTER TABLE `dou_article_category` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_config`
+--
+
+DROP TABLE IF EXISTS `dou_config`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_config` (
+  `name` varchar(80) NOT NULL,
+  `value` text NOT NULL,
+  `type` varchar(10) NOT NULL DEFAULT '',
+  `box` varchar(255) NOT NULL DEFAULT '',
+  `tab` varchar(10) NOT NULL DEFAULT 'main',
+  `sort` tinyint(3) unsigned NOT NULL DEFAULT '1',
+  PRIMARY KEY (`name`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_config`
+--
+
+LOCK TABLES `dou_config` WRITE;
+/*!40000 ALTER TABLE `dou_config` DISABLE KEYS */;
+INSERT INTO `dou_config` VALUES ('site_name','美桥留学移民','text','','main',1),('site_title','美桥留学移民','text','','main',2),('site_keywords','留学,移民,商旅','text','','main',3),('site_description','美桥是一家专业从事留学、移民等境外业务的机构。公司地处长沙市最繁华的商业地段——万达广场，拥有十年以上的工作经验的资深留学、移民顾问专家及海归精英。','text','','main',4),('site_theme','meiqiao','select','','main',5),('site_logo','logobooyoo.gif','file','','main',6),('site_address','长沙市开福区湘江中路589号万达广场写字楼B座15楼','text','','main',7),('site_closed','0','radio','','main',8),('icp','湘ICP备15003543号-1','text','','main',9),('tel','400-6767-630','text','','main',10),('fax','','text','','main',11),('qq','2493472013','text','','main',12),('email','info@majorvisa.com','text','','main',13),('language','zh_cn','select','','main',14),('rewrite','1','radio','','main',15),('sitemap','1','radio','','main',16),('captcha','0','radio','','main',17),('guestbook_check_chinese','1','radio','','main',18),('code','<script type=\"text/javascript\">var cnzz_protocol = ((\"https:\" == document.location.protocol) ? \" https://\" : \" http://\");document.write(unescape(\"%3Cspan id=\'cnzz_stat_icon_1254740733\'%3E%3C/span%3E%3Cscript src=\'\" + cnzz_protocol + \"s95.cnzz.com/stat.php%3Fid%3D1254740733\' type=\'text/javascript\'%3E%3C/script%3E\"));</script>','textarea','','main',19),('display_product','9','text','','display',1),('display_article','5','text','','display',2),('display_guestbook','10','text','','display',3),('home_display_product','4','text','','display',4),('home_display_article','4','text','','display',5),('thumb_width','207','text','','display',6),('thumb_height','293','text','','display',7),('price_decimal','2','text','','display',8),('defined_product','','text','','defined',1),('defined_article','','text','','defined',2),('mobile_name','神塑科技','text','','mobile',1),('mobile_title','神塑科技','text','','mobile',2),('mobile_keywords','神塑科技','text','','mobile',3),('mobile_description','神塑科技','text','','mobile',4),('mobile_theme','default','select','','mobile',5),('mobile_logo','','file','','mobile',6),('mobile_display_product','10','text','','mobile',7),('mobile_display_article','10','text','','mobile',8),('mobile_display_guestbook','10','text','','mobile',9),('mobile_home_display_product','6','text','','mobile',10),('mobile_home_display_article','6','text','','mobile',11),('build_date','1418493807','hidden','','',100),('hash_code','b0e83b5243d0df7ab5bb9cd856f70962','hidden','','',101),('douphp_version','v1.2 Release 20141130','hidden','','',102),('defined_job','人数,性别','text','','defined',1),('display_job','10','text','','display',3);
+/*!40000 ALTER TABLE `dou_config` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_guestbook`
+--
+
+DROP TABLE IF EXISTS `dou_guestbook`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_guestbook` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(150) NOT NULL DEFAULT '',
+  `name` varchar(60) NOT NULL DEFAULT '',
+  `contact_type` varchar(30) NOT NULL DEFAULT '',
+  `contact` varchar(150) NOT NULL DEFAULT '',
+  `content` text NOT NULL,
+  `if_show` tinyint(1) NOT NULL DEFAULT '0',
+  `if_read` tinyint(1) NOT NULL DEFAULT '0',
+  `ip` varchar(15) NOT NULL DEFAULT '',
+  `add_time` int(10) unsigned NOT NULL DEFAULT '0',
+  `reply_id` smallint(5) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_guestbook`
+--
+
+LOCK TABLES `dou_guestbook` WRITE;
+/*!40000 ALTER TABLE `dou_guestbook` DISABLE KEYS */;
+/*!40000 ALTER TABLE `dou_guestbook` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_job`
+--
+
+DROP TABLE IF EXISTS `dou_job`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_job` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `cat_id` smallint(5) NOT NULL DEFAULT '0',
+  `title` varchar(150) NOT NULL DEFAULT '',
+  `defined` text NOT NULL,
+  `content` longtext NOT NULL,
+  `image` varchar(255) NOT NULL DEFAULT '',
+  `keywords` varchar(255) NOT NULL DEFAULT '',
+  `add_time` int(10) unsigned NOT NULL DEFAULT '0',
+  `click` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `description` varchar(255) NOT NULL DEFAULT '',
+  `home_sort` varchar(2) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_job`
+--
+
+LOCK TABLES `dou_job` WRITE;
+/*!40000 ALTER TABLE `dou_job` DISABLE KEYS */;
+INSERT INTO `dou_job` VALUES (14,4,'1111我','人数：性别：','','','',1427857618,0,'','');
+/*!40000 ALTER TABLE `dou_job` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_job_category`
+--
+
+DROP TABLE IF EXISTS `dou_job_category`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_job_category` (
+  `cat_id` smallint(5) NOT NULL AUTO_INCREMENT,
+  `unique_id` varchar(30) NOT NULL DEFAULT '',
+  `cat_name` varchar(255) NOT NULL DEFAULT '',
+  `keywords` varchar(255) NOT NULL DEFAULT '',
+  `description` varchar(255) NOT NULL DEFAULT '',
+  `template` text NOT NULL,
+  `parent_id` smallint(5) NOT NULL DEFAULT '0',
+  `sort` tinyint(1) unsigned NOT NULL DEFAULT '50',
+  PRIMARY KEY (`cat_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_job_category`
+--
+
+LOCK TABLES `dou_job_category` WRITE;
+/*!40000 ALTER TABLE `dou_job_category` DISABLE KEYS */;
+INSERT INTO `dou_job_category` VALUES (4,'11111','111','','','',0,50);
+/*!40000 ALTER TABLE `dou_job_category` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_link`
+--
+
+DROP TABLE IF EXISTS `dou_link`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_link` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `link_name` varchar(60) NOT NULL DEFAULT '',
+  `link_url` varchar(255) NOT NULL DEFAULT '',
+  `sort` tinyint(1) unsigned NOT NULL DEFAULT '50',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_link`
+--
+
+LOCK TABLES `dou_link` WRITE;
+/*!40000 ALTER TABLE `dou_link` DISABLE KEYS */;
+/*!40000 ALTER TABLE `dou_link` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_nav`
+--
+
+DROP TABLE IF EXISTS `dou_nav`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_nav` (
+  `id` mediumint(8) NOT NULL AUTO_INCREMENT,
+  `module` varchar(20) NOT NULL,
+  `nav_name` varchar(255) NOT NULL,
+  `guide` varchar(255) NOT NULL,
+  `parent_id` smallint(5) NOT NULL DEFAULT '0',
+  `type` varchar(10) NOT NULL,
+  `sort` tinyint(1) unsigned NOT NULL DEFAULT '50',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=70 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_nav`
+--
+
+LOCK TABLES `dou_nav` WRITE;
+/*!40000 ALTER TABLE `dou_nav` DISABLE KEYS */;
+INSERT INTO `dou_nav` VALUES (56,'page','公司介绍','1',5,'middle',10),(39,'page','联系我们','53',0,'middle',6),(55,'page','荣誉资质','47',5,'middle',20),(5,'page','关于我们','1',0,'middle',2),(6,'article_category','新闻动态','1',0,'middle',3),(57,'page','招贤纳才','10',5,'middle',30),(17,'page','公司简介','1',0,'bottom',10),(54,'page','诚信经营','10',0,'bottom',90),(19,'page','公司实力','47',0,'bottom',30),(20,'page','人才招聘','10',0,'bottom',40),(52,'page','合作稳定','10',0,'bottom',70),(53,'page','联系我们','10',0,'bottom',80),(51,'page','技术专业','10',0,'bottom',60),(24,'product_category','留学服务','6',0,'top',20),(25,'page','公司简介','1',0,'mobile',10),(26,'product_category','产品中心','0',0,'mobile',20),(27,'article_category','文章中心','0',0,'mobile',30),(28,'page','企业荣誉','2',0,'mobile',40),(29,'page','营销网络','6',0,'mobile',50),(30,'page','人才招聘','5',0,'mobile',60),(31,'page','联系我们','4',0,'mobile',70),(32,'guestbook','留言反馈','0',0,'mobile',80),(50,'page','联系我们','10',0,'bottom',50),(36,'nav','服务中心','http://www.majorvisa.com/product/study-abroad',0,'middle',4),(58,'nav','首页','http://www.majorvisa.com',0,'middle',1),(59,'article_category','公司新闻','3',6,'middle',50),(60,'article_category','行业动态','4',6,'middle',50),(69,'nav','成功案例','http://www.majorvisa.com/case.html',0,'middle',5),(62,'product_category','移民服务','7',0,'top',30),(63,'product_category','商旅服务','8',0,'top',40),(66,'product_category','留学服务','6',36,'middle',10),(65,'page','成功案例','52',0,'top',50),(67,'product_category','移民服务','7',36,'middle',20),(68,'product_category','商旅服务','8',36,'middle',30);
+/*!40000 ALTER TABLE `dou_nav` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_page`
+--
+
+DROP TABLE IF EXISTS `dou_page`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_page` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `unique_id` varchar(30) NOT NULL DEFAULT '',
+  `parent_id` smallint(5) NOT NULL DEFAULT '0',
+  `page_name` varchar(150) NOT NULL DEFAULT '',
+  `content` longtext NOT NULL,
+  `keywords` varchar(255) NOT NULL DEFAULT '',
+  `description` varchar(255) NOT NULL DEFAULT '',
+  `banner` varchar(255) NOT NULL,
+  `type` varchar(30) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=54 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_page`
+--
+
+LOCK TABLES `dou_page` WRITE;
+/*!40000 ALTER TABLE `dou_page` DISABLE KEYS */;
+INSERT INTO `dou_page` VALUES (1,'aboutus',0,'公司介绍','<p align=\"center\"><img src=\"http://www.majorvisa.com/images/upload/20150410/14286551676554.jpg\" _src=\"http://www.majorvisa.com/images/upload/20150410/14286551676554.jpg\"/></p>','公司简介','公司简介   ','images/banner/1420624927_titlecar.jpg','page_normal'),(47,'honer',0,'荣誉资质','<p align=\"center\"><img src=\"http://www.majorvisa.com/images/upload/20150327/14274484403863.jpg\" _src=\"http://www.majorvisa.com/images/upload/20150327/14274484403863.jpg\"/><div align=\"left\">&nbsp;</div><p></p><p></p><p></p></p>','荣誉资质','荣誉资质','images/banner/1420624757_titlesl.jpg','page_normal'),(10,'recruit',0,'招贤纳才','<p>暂无需求</p>','招贤纳才','招贤纳才','images/banner/1420624724_title.jpg','page_normal'),(52,'case',0,'成功案例','<p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">美国的成功案例：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKaicolor:#1f497d\">林科大涉外学院林同学，托福100，GRE<span style=\"COLOR: #1f497d\"></span>1330，GPA 89/100, 申请到宾州大学建筑工程硕士专业，该校建筑工程专业美国排名第一。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"><img src=\"http://majorvisa.com/images/upload/20150410/14286531663299.jpg\" _src=\"http://majorvisa.com/images/upload/20150410/14286531663299.jpg\"/></span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">醴陵一中高二龚同学，双录取进入布达拉斯加大学GPA3.6/A,两年后成功转入德州大学奥斯汀心理学专业。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">湖南师大艺术系小提琴专业严同学，申请到迈阿密大学音乐商务硕士。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">长沙市一中高中毕业王同学，无语言成绩，社区大学成功转入南加州大学本科。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"><img src=\"http://majorvisa.com/images/upload/20150410/14286530644986.jpg\" _src=\"http://majorvisa.com/images/upload/20150410/14286530644986.jpg\"/></span></p><p><span style=\"FONT-SIZE: 16px\"><br/><span style=\"FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"></span></span></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">英国成功案例：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">湖南商学院大一刘同学，无语言成绩，双录取转学怀卡托大学酒店管理专业。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">湖南师范大学树达学院汉语言文学专业毕业谭同学，GPA80/100，无语言成绩，成功申请到谢菲尔德大学博物馆学专业研究生。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">湘潭大学市场营销专业陈同学，雅思7.0分，GPA89/100,成功申请到兰卡斯特大学商务学院市场营销专业研究生。</span></p><p><span style=\"FONT-SIZE: 16px\"><br/><span style=\"FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"></span></span></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">澳大利亚成功案例：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">湖南农大英语系段老师，雅思8.0分，成功申请到墨尔本大学口译硕士专业。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">长沙大学英语专业陈同学，雅思6.5分，成功申请到悉尼大学TESOL专业。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">长沙市一中高中毕业曹同学，无语言成绩，双录取进入阿德莱德大学工商管理专业。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">湖南大学王同学，雅思6.0分，成功申请到莫纳什大学外交与贸易硕士专业。</span></p><p><span style=\"FONT-SIZE: 16px\"><br/><span style=\"FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"></span></span></p><p><strong><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">新<span style=\"FONT-SIZE: 18px\">西兰成功案例：</span></span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">长沙市雅礼中学高三学生黄同学，无语言成绩，双录取进入坎特伯雷大学国际贸易专业。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">湖南商学院大一刘同学，无语言成绩，双录取转学怀卡托大学酒店管理专业。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">长沙市雅礼中学高二王同学，无语言成绩，成功申请到奥塔哥大学设计专业预科。</span></p><p><br/></p>','成功案例','成功案例','','page_normal'),(53,'contactus',0,'联系我们','<p style=\"width:500px; float:left;\"><iframe class=\"ueditor_baidumap\" src=\"http://majorvisa.com/admin/include/umeditor/dialogs/map/map.html#center=112.976482,28.211165&zoom=15&width=530&height=340&markers=undefined,undefined\" frameborder=\"0\" width=\"534\" height=\"344\"></iframe></p><div id=\"ad\"><p>美桥出国是一家专业从事留学、移民等境外业务的机构。公司地处长沙市最繁华的商业地段-万达广场，拥有一流的办公环境、十多年以上的工作经验的资深留学、移民顾问专家及海归精英。</p><p>公司与众多海外院校建立了友好合作关系，业务涵盖美国、加拿大、英国、澳大利亚、新西兰、日本、韩国、意大利等国家的留学咨询服务，圆了数千学子的海外留学之梦。今年，公司与一系列海外移民项目展开密切合作，提供包括美国、英国、澳大利亚、新西兰投资移民，加拿大留学转移民，香港投资定居，葡萄牙、西班牙、希腊购房移民等国的投资移民咨询服务，同事，公司还提供商旅出国签证、文化教育艺术活动的交流、组织、策划等咨询业务。</p><p>美桥出国秉承：“专业、诚信、责任”的服务理念，坚持专业化、规范化、国际化的标准，竭诚为每位客户搭建通往美好未来的桥梁。</p><p>地址：长沙市开福区湘江中路589号万达广场写字楼B座15楼</p><p>全国免费热线:400-6767-630</p><p>咨询电话:0731-89608222</p><p>邮箱：info@majorvisa.com</p></div>','联系我们','联系我们','','page_normal');
+/*!40000 ALTER TABLE `dou_page` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_page_images`
+--
+
+DROP TABLE IF EXISTS `dou_page_images`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_page_images` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `sort` int(11) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `image_url` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `temp_num` int(11) NOT NULL,
+  `page_id` mediumint(8) unsigned NOT NULL,
+  `desctiption` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `image_link` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=105 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_page_images`
+--
+
+LOCK TABLES `dou_page_images` WRITE;
+/*!40000 ALTER TABLE `dou_page_images` DISABLE KEYS */;
+/*!40000 ALTER TABLE `dou_page_images` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_product`
+--
+
+DROP TABLE IF EXISTS `dou_product`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_product` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `cat_id` smallint(5) NOT NULL DEFAULT '0',
+  `product_name` varchar(150) NOT NULL DEFAULT '',
+  `price` decimal(10,2) unsigned NOT NULL DEFAULT '0.00',
+  `defined` text NOT NULL,
+  `content` longtext NOT NULL,
+  `product_image` text NOT NULL,
+  `keywords` varchar(255) NOT NULL DEFAULT '',
+  `add_time` int(10) unsigned NOT NULL DEFAULT '0',
+  `description` text NOT NULL,
+  `home_sort` varchar(2) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=56 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_product`
+--
+
+LOCK TABLES `dou_product` WRITE;
+/*!40000 ALTER TABLE `dou_product` DISABLE KEYS */;
+INSERT INTO `dou_product` VALUES (49,8,'澳大利亚签证',0.00,'','<p><img src=\"http://www.majorvisa.com/images/upload/20150402/14279655801882.jpg\" _src=\"http://www.majorvisa.com/images/upload/20150402/14279655801882.jpg\" style=\"width: 400px; height: 280px;\"/></p><p><span style=\"line-height: 19.2000007629395px; font-family: Calibri; font-size: 14px;\">1.&nbsp;</span><span style=\"line-height: 19.2000007629395px; font-family: 宋体; font-size: 14px;\">旅游签证</span></p><p><span style=\"line-height: 19.2000007629395px; font-family: Calibri; font-size: 14px;\">2.&nbsp;</span><span style=\"line-height: 19.2000007629395px; font-family: 宋体; font-size: 14px;\">商务签证</span></p><p><span style=\"line-height: 19.2000007629395px; font-family: Calibri; font-size: 14px;\">3.&nbsp;</span><span style=\"line-height: 19.2000007629395px; font-family: 宋体; font-size: 14px;\">探亲签证</span></p><p><span style=\"font-family: 宋体; font-size: 14px; line-height: 19.2000007629395px;\">送签地：北京、上海、成都、广州</span></p><p><br/></p>','images/product/1427968817_circle4.jpg,images/product/1427968817_circle41.jpg','',1427965588,'',''),(50,8,'新加坡签证',0.00,'','<p><img src=\"http://www.majorvisa.com/images/upload/20150402/1427965612153.jpg\" _src=\"http://www.majorvisa.com/images/upload/20150402/1427965612153.jpg\" style=\"width: 400px; height: 280px;\"/></p><p><span style=\"line-height: 19.2000007629395px; font-family: Calibri; font-size: 14px;\">1&nbsp;</span><span style=\"line-height: 19.2000007629395px; font-family: 宋体; font-size: 14px;\">旅游签证</span></p><p><span style=\"line-height: 19.2000007629395px; font-family: Calibri; font-size: 14px;\">2&nbsp;</span><span style=\"line-height: 19.2000007629395px; font-family: 宋体; font-size: 14px;\">商务签证</span></p><p><span style=\"line-height: 19.2000007629395px; font-family: Calibri; font-size: 14px;\">3&nbsp;</span><span style=\"line-height: 19.2000007629395px; font-family: 宋体; font-size: 14px;\">探亲签证</span></p><p><span style=\"font-family: 宋体; font-size: 14px; line-height: 19.2000007629395px;\">送签地：北京、上海、成都、广州、深圳</span></p><p style=\"margin-left:24px;text-indent:0\"><span style=\";font-family:宋体;font-size:14px\">&nbsp;</span></p><p><br/></p>','images/product/1427969415_xinjiapo.jpg,images/product/1427969415_xinjiapohui.jpg','',1427965618,'',''),(42,6,'澳大利亚',0.00,'','<p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"><img src=\"http://majorvisa.com/images/upload/20150407/14283900068412.jpg\" _src=\"http://majorvisa.com/images/upload/20150407/14283900068412.jpg\"/></span></strong></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">留学优势：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">高质量生活水平，全球竞争力排名第九，在世界舞台彰显实力。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">澳洲八大名校全部进入世界200强，领先世界的教育体系。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">友善和谐的多元社会，安全祥和的生活环境。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">无种族歧视，鼓励留学生移民。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">签证手续快捷方便，一次性可获得四年留学签证。</span></p><p><span style=\"FONT-SIZE: 16px\"><br/><span style=\"FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"></span></span></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">入学要求：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">中学：有一定英语听说读写能力的初、高中学生。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">本科：托福、雅思成绩优异，无语言成绩可申请入悉尼大学、新南威尔士大学、莫纳什大学、西澳大学等大学预科。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">研究生：托福雅思成绩优异可直接申请。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">入学时间：每年的2月和7月。</span></p><p><span style=\"FONT-SIZE: 16px\"><br/><span style=\"FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"></span></span></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">留学费用：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">学费约1-2.5万澳币/年，折合人民币约6-18万元。生活费约2万澳币/年。澳大利亚允许校内打工，可以适当补贴一些生活费用。</span></p><p><br/></p>','images/product/1427968572_circle4.jpg,images/product/1427968572_circle41.jpg','',1427965323,'',''),(43,6,'新西兰',0.00,'','<p><strong>留学优势：</strong></p><p>教育体制富有活力，水平优秀，学制灵活，学历全球认可</p><p>学习、生活环境好，学费和生活费用低，担保资金少</p><p>无需托福/雅思成绩即可申请入学，专业设置多种多样</p><p>合法的校内打工，分担家庭经济压力，帮助融入当地环境</p><p>签证快捷，通过率高</p><p>留学生可享受医疗、保险等各种优惠待遇</p><p><br/></p><p><strong>入学要求：</strong></p><p>中学：有一定英语听说读写能力的初、高中学生</p><p>本科：托福/雅思成绩优异可直接申请；无语言成绩可申请入奥克兰大学等预科</p><p>研究生：托福/雅思成绩优异可直接申请</p><p>入学时间：每年的2月和7月</p><p><br/></p><p><strong>留学费用：</strong></p><p>学费约2万新元/年，折合人民币约10万元，生活费约1万新元/年，折合人民币约5万元</p><p><br/></p>','images/product/1427968617_circle7.jpg,images/product/1427968617_circle71.jpg','',1427965347,'',''),(44,6,'英国',0.00,'','<p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"><img src=\"http://majorvisa.com/images/upload/20150407/14283786022627.jpg\" _src=\"http://majorvisa.com/images/upload/20150407/14283786022627.jpg\"/></span></strong></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">留学优势：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">教育水准高，云集世界众多顶级院校，文凭国际认可</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">留学生福利完善，留学签证超半年即可享受英国政府提供的免费医疗服务</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">百余所大学可供学生任意选择，留学时间短，性价比高</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">纯正的英语母语国家，历史悠久</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">可合法打工且回报高</span></p><p><span style=\"FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"><br/><span style=\"FONT-SIZE: 16px\"></span></span></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">入学要求：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">中学：有一定英语听说读写能力的初、高中学生</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">本科：雅思成绩优异可直接申请，无语言成绩可申请大学预科</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">研究生：雅思成绩优异可直接申请，语言未达到要求可先申请相应的语言课程</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">专科毕业生可申请1年的专升本课程和1年的研究生课程；有三年以上工作经验的专科毕业生可直接申请1年的研究生</span></p><p><strong><br/><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"></span></strong></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">留学费用：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">学费约1-1.5英镑/年，折合人民币约10-15万元。生活费约5000-7000英镑一年，折合人民币约5-7万元</span></p><p><br/></p>','images/product/1427968646_circle3.jpg,images/product/1427968646_circle31.jpg','',1427965387,'',''),(45,6,'意大利',0.00,'','<p><strong><img src=\"http://majorvisa.com/images/upload/20150407/1428377693218.jpg\" _src=\"http://majorvisa.com/images/upload/20150407/1428377693218.jpg\"/></strong></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">留学优势：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">欧洲高等教育第一锅，历史文化悠久，专业设置齐全，特色鲜明。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">公立大学免学费，留学经济实惠，文凭含金量高。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">音乐、绘画、服装设计、建筑工程、医药、经济等学科均居世界领军地位。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">持留学签证可自由通行欧洲26个国家。</span></p><p><br/></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">项目优势：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">“马可波罗”计划：</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">由意大利大学校长联合会（CRUI）发起，旨在密切意大利与中国之间的学术交流。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">无意大利语基础即可获得录取与签证</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">“马可波罗”计划合作大学包括：博洛尼亚大学、热那亚大学、米兰理工大学、都灵理工大学、佛罗伦萨大学、佩鲁贾大学、罗马第二大学、罗马第三大学等意大利顶尖大学涵盖意大利众多知名院校与热门专业</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">招生对象：非艺术类学生，高考成绩380分以上，会考成绩合格</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">“图兰朵”计划</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">“图兰朵”计划针对美术、音乐、设计类学生设计，涵盖了大部分重点艺术院校</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">“图兰朵”计划包括威尼斯音乐学院、米兰威尔第音乐学院、佛罗伦萨美术学院、罗马美术学院、威尼斯美术学院、博洛尼亚美术学院、罗马工业美术高等学院等意大利重点艺术学院</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">招生对象：高考成绩和艺考成绩折合超过380分以上，会考成绩合格</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">入学要求：无需意大利语基础也可申请，直接进入大学预科进行语言培训</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">入学时间：每年的3月（计划生）和9月（国际生）</span></p><p><br/></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">留学费用：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">公立大学免学费，注册费400-1000欧/年，折合人民币约3000-8000元。生活费约8000欧/年，折合人民币约7万元</span></p><p><br/></p>','images/product/1427968677_circle5.jpg,images/product/1427968677_circle51.jpg','',1427965410,'',''),(46,7,'美国',0.00,'','<p style=\"TEXT-ALIGN: center\"><strong><span style=\"FONT-SIZE: 24px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"><img src=\"http://majorvisa.com/images/upload/20150407/14283928218017.jpg\" _src=\"http://majorvisa.com/images/upload/20150407/14283928218017.jpg\"/></span></strong></p><p style=\"TEXT-ALIGN: center\"><strong><span style=\"FONT-SIZE: 24px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">EB-5区域中心投资项目</span></strong></p><p><strong><br/><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"></span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">&nbsp;&nbsp;&nbsp; <span style=\"FONT-SIZE: 18px\">1990年，国会批准创建了第五类雇佣优先（EB-5）的移民签证类别。设立该签证类别的目的是帮助在美国投资并为美国经济创造或保留至少10个全职工作岗位的合格外籍投资人获得合法的永久签证。目前，该项目的具体执行由美国公民和移民服务局（USCIS）负责。移民投资人的最低投资金额为100万美元， 而在偏远地区或高失业率的地区进行投资时，投资金额的最低要求可以降低为50万美元。</span></span></p><p><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">&nbsp;&nbsp; 1992年，国会批准了标准EB-5项目的附属部分，即区域中心试点项目。区域中心必须经由USCIS授权指定，负责协调多位移民投资人的投资事宜和联合经营投资人的投资资金以创造更大的经济效益。区域中心可以是私有实体公司，也可以是公共实体公司。区域中心的授权经营范围将限定在规定的地域范围和特定的行业领域内。</span></p><p><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">&nbsp;&nbsp; 标准EB-5项目和区域中心项目有着几大明显的差别。区域中心项目允许使用经济模型来模拟确定投资人投资资本所创造的间接就业岗位数量和衍生就业岗位数量。这表明在区域中心项目中，外籍投资人可以合理的使用其投资所创造的直接就业、间接就业和衍生就业等数量。由于投资移民所需的创造就业岗位数量要求，通过对联邦指定的区域中心进行投资可以为移民投资人提供一条迅速获得永久居住签证（绿卡）的途径。区域中心通过对规定地域范围和行业领域内投资人投资项目的直接和专业管理，最终使投资人受益。</span></p><p><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">&nbsp;&nbsp; 投资人若获得绿卡，则需经历EB-5移民流程中的几大步骤。投资人选定USCIS授权的区域中心后，投资人需提交外籍企业家移民申请（I-526申请表格）以寻求获得条件居住权。USCIS和美国国务院将确定投资人是否符合获得EB-5条件签证的条件。移民流程该部分的尽职调查包括详细审核投资人的投资资本来源、家庭背景、户主的其他声明、配偶、21周岁以下的直系亲属成员等。该申请还包括一份投资项目的详细规划说明以及确定间接就业和衍生就业使用经济模型的说明等。若获批，合格的投资移民人首先将获得有效期为两年的临时绿卡。</span></p><p><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">&nbsp;&nbsp; 在两年的条件居住权到期之前，投资人需向USCIS提交企业家临时绿卡条件提出申请（I-829申请表格）.该申请表明投资人的投资资本已经完全进行投资，并在两年期限内存在风险，该申请要求必须创造至少10个合格的就业岗位。I-829申请获批后，投资人及其家庭成员将成为美国的永久居民，并最终选择成为美国公民。根据投资人申请书的时效性、质量和有效性，整个EB-5流程大约需要3-5年的申请时间。</span></p><p><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">&nbsp;&nbsp; 美国EB-5签证时永久签证，获批后不需要再认证过程，与世界上其他签证项目相比具有明显的优势和较少的限制、EB-5签证不存在年龄、商务培训、管理技能、经验或语言技能等方面的限制要求。</span></p><p><br/></p>','images/product/1427968729_circle1.jpg,images/product/1427968729_circle11.jpg','',1427965454,'',''),(47,8,'美国签证',0.00,'','<p><img src=\"http://www.majorvisa.com/images/upload/20150402/14279654971494.jpg\" _src=\"http://www.majorvisa.com/images/upload/20150402/14279654971494.jpg\" style=\"line-height: 19.2000007629395px; width: 400px; height: 280px;\"/></p><p>1.旅游签证</p><p>2.商务签证</p><p>3.探亲签证</p><p>送签地：北京、上海、成都、广州</p><p><br/></p>','images/product/1427968753_circle1.jpg,images/product/1427968753_circle11.jpg','',1427965514,'',''),(48,8,'加拿大签证',0.00,'','<p><img src=\"http://www.majorvisa.com/images/upload/20150402/14279655509856.jpg\" _src=\"http://www.majorvisa.com/images/upload/20150402/14279655509856.jpg\" style=\"width: 400px; height: 280px;\"/></p><p>1．旅游签证</p><p>2. 商务签证</p><p>3.探亲签证</p><p>送签地：北京、广州、上海</p><p><br/></p>','images/product/1427968782_circle2.jpg,images/product/1427968782_circle21.jpg','',1427965555,'',''),(41,6,'加拿大',0.00,'','<p><span style=\"LINE-HEIGHT: 19px\"><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"><img src=\"http://majorvisa.com/images/upload/20150407/14283905316025.jpg\" _src=\"http://majorvisa.com/images/upload/20150407/14283905316025.jpg\"/></span></strong></span></p><p><span style=\"LINE-HEIGHT: 19px\"><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">留学优势：</span></strong></span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">英联邦成员国之一，教育体系世界公认优秀。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">无需语言成绩，快速申请进百所国际公认学历的公立大学。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">留学性价比高，国际生可享受学费返还政策。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">毕业即可获得三年工作签证，留学移民利好政策频出。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">良好的社会治安，优美的自然风光，多次被评为最适合人类居住的国家。</span></p><p><strong><br/><span style=\"FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"></span></strong></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">入学要求：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">中学：有一定的听说读写能力的初、高中学生。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">本科：托福/雅思成绩优异；无语言成绩可申请大学预科或双录取。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">研究生：托福/雅思及GMAT/GRE视具体专业要求，成绩优异可直接申请。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">入学时间：每年的1月和9月。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">留学费用：学费约1-2.5万加元/年，折合人民币约6.5-15万元。生活费约1-2万加元/年，折合人民币约6.5-12万元。如果申请到奖学金或在校打工，费用将大大减少。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">加拿大魁北克省留学转移民快速通道项目。</span></p><p><strong><br/><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\"></span></strong></p><p><strong><span style=\"FONT-SIZE: 18px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">项目优势：</span></strong></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">移民快速通道，毕业后大约4周内科获得魁北克省移民甄选批准。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">留学和移民全程申请跟进，或加国移民身份。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">移民成本低，性价比高，享受加拿大优质教育和环境。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">专业课程使用英语或法语授课，专业与法语语言同步学习，一年半毕业。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">针对加拿大就业市场开设专业，就业有保障。</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">取得移民身份后，享受当地居民福利待遇，报读加拿大知名大学学费仅为海外学生的1/10</span></p><p><span style=\"FONT-SIZE: 16px; FONT-FAMILY: 楷体,楷体_GB2312, SimKai\">移民批准后，父母可通过{家庭团聚}获得身份。</span></p><p><br/></p>','images/product/1427968555_circle2.jpg,images/product/1427968555_circle21.jpg','',1427965263,'',''),(40,6,'美国',0.00,'','<div style=\"width:1000px; height:568px; background:url(http://i2.tietuku.com/3ebe31c67c8bf128.jpg) no-repeat;\"></div> <div style=\"width:1000px; height:135px; background:url(http://i2.tietuku.com/598de4254ae0595a.jpg) no-repeat;\"> <a style=\" display:block; width:235px; height:125px; float:left; margin-left:7px; margin-right:7px;\" href=\"#\" target=\"_blank\" ></a> <a style=\" display:block; width:235px; height:125px; float:left; margin-left:7px; margin-right:7px;\" href=\"#\" target=\"_blank\" ></a> <a style=\" display:block; width:235px; height:125px; float:left; margin-left:7px; margin-right:7px;\" href=\"#\" target=\"_blank\" ></a> <a style=\" display:block; width:235px; height:125px; float:left; margin-left:7px; margin-right:7px;\" href=\"#\" target=\"_blank\" ></a> </div>','images/product/1427968468_circle1.jpg,images/product/1427968468_circle11.jpg','',1427964810,'',''),(51,8,'英国签证',0.00,'','<p><img src=\"http://www.majorvisa.com/images/upload/20150402/14279656357118.jpg\" _src=\"http://www.majorvisa.com/images/upload/20150402/14279656357118.jpg\" style=\"width: 400px; height: 280px;\"/></p><p><span style=\"line-height: 19.2000007629395px; font-family: Calibri; font-size: 14px;\">1.&nbsp;</span><span style=\"line-height: 19.2000007629395px; font-family: 宋体; font-size: 14px;\">旅游签证</span></p><p><span style=\"line-height: 19.2000007629395px; font-family: Calibri; font-size: 14px;\">2.&nbsp;</span><span style=\"line-height: 19.2000007629395px; font-family: 宋体; font-size: 14px;\">商务签证</span></p><p><span style=\"line-height: 19.2000007629395px; font-family: Calibri; font-size: 14px;\">3.&nbsp;</span><span style=\"line-height: 19.2000007629395px; font-family: 宋体; font-size: 14px;\">探亲签证</span></p><p><span style=\"font-family: 宋体; font-size: 14px; line-height: 19.2000007629395px;\">送签地：北京、上海、成都、广州</span></p><p><br/></p>','images/product/1427968882_circle3.jpg,images/product/1427968882_circle31.jpg','',1427965642,'',''),(52,8,'新西兰签证',0.00,'','<p><img src=\"http://www.majorvisa.com/images/upload/20150402/14279656616004.jpg\" _src=\"http://www.majorvisa.com/images/upload/20150402/14279656616004.jpg\" style=\"width: 400px; height: 280px;\"/></p><p><span style=\"line-height: 19.2000007629395px; font-family: Calibri; font-size: 14px;\">1.&nbsp;</span><span style=\"line-height: 19.2000007629395px; font-family: 宋体; font-size: 14px;\">旅游签证</span></p><p><span style=\"line-height: 19.2000007629395px; font-family: Calibri; font-size: 14px;\">2.&nbsp;</span><span style=\"line-height: 19.2000007629395px; font-family: 宋体; font-size: 14px;\">商务签证</span></p><p><span style=\"line-height: 19.2000007629395px; font-family: Calibri; font-size: 14px;\">3.&nbsp;</span><span style=\"line-height: 19.2000007629395px; font-family: 宋体; font-size: 14px;\">探亲签证</span></p><p><span style=\"font-family: 宋体; font-size: 14px; line-height: 19.2000007629395px;\">送签地：北京、上海、广州</span></p><p><br/></p>','images/product/1427968921_circle7.jpg,images/product/1427968921_circle71.jpg','',1427965666,'',''),(53,7,'希腊',0.00,'','<p style=\"text-align: center;\"><img src=\"http://www.majorvisa.com/images/upload/20150413/14289146872092.jpg\" _src=\"http://www.majorvisa.com/images/upload/20150413/14289146872092.jpg\" style=\"width:668px; height: 500px;\"/></p><p>&nbsp; &nbsp;希腊国土面积约13.2万平方公里。位于巴尔干半岛最南端。三面环水，西南濒爱奥尼亚海，东临爱琴海，南隔地中海与非洲大陆相望。<span style=\"line-height: 19.2000007629395px;\">希腊有着世界上最长的海岸线，约为1.5万千米，这里以岛屿众多而知名（约有1400座岛屿，其中227有人居住），包括克里特岛，多德卡尼斯群岛，基克拉底群岛，爱奥尼亚群岛等。最大半岛为伯罗奔尼撒半岛，最大岛屿是克里特岛。</span></p><p><span style=\"line-height: 19.2000007629395px;\">&nbsp; &nbsp;希腊共有13个行政大区，下辖53个省：东马其顿－色雷斯大区、 中马其顿大区、西马其顿大区、伊庇鲁斯大区、塞萨利大区、伊奥尼亚群岛大区、西部希腊大区、中部希腊大区、伯罗奔尼撒大区、阿提卡大区、北爱琴海大区、南爱琴海大区、克里特大区。</span><span style=\"line-height: 19.2000007629395px;\">雅典是希腊的首都和最大的城市，主要区域为阿提卡区，这里有着3400年的历史，是欧洲最古老的城市之一。</span><span style=\"line-height: 19.2000007629395px;\">公元前4-5世纪，这里的政治文化成就使其成为了西方文明的摇篮，民主的诞生地，在随后的几个世纪里，欧洲大陆得以闻名。</span><span style=\"line-height: 19.2000007629395px;\">今天，现代雅典作为国际化大都市，是希腊的经济，财政，工业，政治和文化中心。2012年，雅典的购买力水平位于世界第32位。</span><span style=\"line-height: 19.2000007629395px;\">萨洛尼卡是希腊除雅典之外的第二大城市，人口100万，即是希腊北方工业重镇，又是整个巴尔干地区的商业中心。该城市市始建于公元前316年，是欧洲最古老的城市之一。城市以亚历山大大帝之妹、马其顿国王之妻的名字命名，并从此成为马其顿王国的首都。</span><span style=\"line-height: 19.2000007629395px;\">帕特雷位于伯罗奔尼撒半岛西北部，背依帕纳哈克斯山，西临帕特雷海湾，是希腊西部通往意大利和伊奥尼亚诸岛的重要的港口城市，人口约50万，是希腊第三大城市。</span><span style=\"line-height: 19.2000007629395px;\">纳夫普里翁附近地区的蔬菜种植业十分发达，带动了食品加工业的发展，产品出口到北美、非洲、亚洲及澳洲等地。</span><span style=\"line-height: 19.2000007629395px;\">奥林匹亚 奥林匹亚竞技场位于伯罗奔尼撒半岛西部的奥林匹亚村，离雅典370公里，是世界奥林匹克运动的发源地。古代时期是宗教祭祀和体育竞技中心之一。现存有古代的体育场，宙斯神庙、赫拉神庙等遗迹。</span></p><p><span style=\"line-height: 19.2000007629395px;\"></span>&nbsp; &nbsp;希腊属于地中海气候。四分之三为山地，沿海有低地，海岸线长1.5万公里，多曲折港湾,河流短急。除高山外，属地中海式气候，冬温湿，夏干热，从北到南平均气温：1月5-11℃，7月25-27℃。年降水量东部400-700毫米，西部约900-1，200毫米。历史悠久的希腊位于巴尔干半岛西部，终年阳光普照，全境日照充足，各地区每年平均日照超过2000小时。<span style=\"line-height: 19.2000007629395px;\">主要矿产资源有铝矾土（储藏量约10亿吨）、褐煤（储藏量56亿吨）、镍、铬、镁、石棉、铀、大理石等。</span><span style=\"line-height: 19.2000007629395px;\">森林面积占国土的20％。主要工业有采矿、冶金、纺织、造船、建筑等。希腊是传统的农业国，可耕地面积占全国面积的26.4％。</span><span style=\"line-height: 19.2000007629395px;\">服务业是经济的重要组成部分，旅游业是获得外汇、维持国际收支平衡的主要来源之一。</span></p><p><span style=\"line-height: 19.2000007629395px;\"></span></p><p>&nbsp; &nbsp;2013年4月9日,希腊议会批准了希腊投资移民促进法；<span style=\"line-height: 19.2000007629395px;\">愿意投资希腊不动产的在希腊居住或是养老的无工作的非欧盟公民，只要获得25万欧元以上的房产所有权，全家便可申请得到希腊5年居留许可，房产不出售。居留可继续，直至获得希腊护照。</span><span style=\"line-height: 19.2000007629395px;\">希腊房产主要位于：雅典卫城，阿里莫斯，沃拉等自治区，克里特岛，帕罗斯岛，圣托里尼岛以及南部郊区的黄金地段。</span></p><p><span style=\"line-height: 19.2000007629395px;\"><strong>移民优势：</strong></span></p><p><span style=\"line-height: 19.2000007629395px;\"></span></p><p>1、无需放弃本国国籍，保留内地户口，不影响内地事业和生活；</p><p>2、无居住要求、语言、经商限制；</p><p>3、无双重课税制度；</p><p>4. 无需资金来源证明，无移民监；</p><p>5、绿卡更新手续非常简易，相比欧盟其他国家的绿卡申请，希腊最为容易与低价。拿到希腊绿卡的申请人可享受与希腊公民完全一样的福利待遇，这一情况存在于欧洲各国，也仅存在于欧洲，是欧洲高福利及真正平等的具体表现。</p><p>6、获得投资购房居留，即可全家获得居留（夫妻任何一方购买，或共同购买，子女即可随父母获得居留）。欧盟国家的规定，申请人持有绿卡2年以上（各国具体时间不同，一般2年）无须成为公民，即可向当地政府提出申请家庭团聚。</p><p>&nbsp; &nbsp;中国和希腊于1972年6月5日建交以来，两国关系发展顺利。八十年代，两国总理进行了互访。希总统和议长先后访华。九十年代以来，高层互访增加，两国在政治、经济、文化、科技和军事等领域的友好合作关系发展顺利。<span style=\"line-height: 19.2000007629395px;\">2013年5月17日希腊总理访华，会晤了国家主席习近平，两国签订了各项协议，宣称未来两国的经济贸易量会增长一倍，在2015年贸易额达到一年85亿欧元（约680亿人名币），将希腊打造为中国产品输入三大陆（欧洲，非洲和中东）的通道。</span><span style=\"line-height: 19.2000007629395px;\">中国集装箱运输巨头中远集团投入6.5亿欧元，使交通运输量增长一倍，将比雷埃夫斯打造成了欧洲第四大繁华港，同时中远集团计划追投4亿，长期租用另一端码头，这也使得比雷埃夫斯有望成为欧洲第一大港。</span><span style=\"line-height: 19.2000007629395px;\">希腊社会安定，尊重人权，保护私人财产。获得希腊居留权后可以在希腊投资经商，孩子免费入读公立学校，获得永居后，在就业、学习、福利等方面可立享国民待遇。</span></p><p><span style=\"line-height: 19.2000007629395px;\">公费医疗：</span><span style=\"line-height: 19.2000007629395px;\">凡是希腊的居民，有社会保险福利号码者均有权享受公费医疗。生一个孩子可以补贴一千多欧元，医疗等基本免费。</span></p><p><span style=\"line-height: 19.2000007629395px;\">教育：</span><span style=\"line-height: 19.2000007629395px;\">小学至大学全部免费。</span></p><p><span style=\"line-height: 19.2000007629395px;\">各类家庭补助：</span><span style=\"line-height: 19.2000007629395px;\">欧盟各国均设立了许多家庭福利措施。一般而言分为育儿补助</span><span style=\"line-height: 19.2000007629395px;\">与家庭困难及住房补助。希腊也是欧盟国家，同样享受以下家</span></p><p>庭补助：<span style=\"line-height: 19.2000007629395px;\">幼儿补助、生活补助和失业者补助</span></p><p><span style=\"line-height: 19.2000007629395px;\"></span></p><p>最低生活保障金补助：失业金较低的人在领取失业金的同时，可以领取最低生活保障的差额补助。</p><p>孕妇补助：妇女怀孕后可以申请孕妇体检补助，从第一次体俭到孩子出生的一切费用均可申请免费。</p><p>鳏寡补助：对于丧偶后无经济收入者，可申请此项补助。</p><p>老年人自立特别补助金补助：凡60岁以上老人生活不能完全自理者均可提出申请。</p><p>病假补贴：职工病假可从社会保险局获得病假工资。</p><p>社会保险：一个有社会保险的人的家庭成员可以享受他（她）名下的社会保险福利。例如一个家庭，丈夫有社会福利保险，那么他的妻子和孩子同时可以享受。</p><p>退休制度：受薪者到了退休年龄便可从退休管理部门获得退休金。可以安亨晚年。</p><p><span style=\"line-height: 19.2000007629395px;\"></span></p><p><strong>教育体制</strong></p><p>阶段介绍：学前教育2年，初等教育学习年限为6年，从6岁开始。中等教育分初中和高中两个阶段，学习年限各为3年，之后为高等教育。</p><p>希腊高等学校分为两类，即大学和高等职业学校：</p><p>大学学习年限为6年，著名大学有雅典大学、萨洛尼卡大学、克里特大学、佩特雷大学等。</p><p>高等专科学校主要进行高等职业技术教育，学制一般为2-3年。</p><p>希腊的特色教育</p><p>&nbsp; &nbsp; 希腊特色教育：目前有许多国外著名学府开始在希腊办学，让学生接受英美教育，包括美国大学在希腊设立的分校，其中包括美国纽约大学，美国欧洲东南大学等，学生毕业时取得的文凭和美国本校一样，被美国政府机构承认；另外还有希腊的教育机构同英国大学联合办学，并且在希腊的学费还不及英国本土的2/3。</p><p>2013年4月9日,希腊议会批准了希腊投资移民促进法:</p><p>愿意投资希腊不动产的在希腊居住或是养老的无工作的非欧盟公民，只要获得25万欧元以上的房产所有权，全家便可申请得到希腊5年居留许可，房产不出售,居留可继续,直至获得希腊护照。</p><p>希腊投资移民申请条件：</p><p>1. 申请人必须年满18周岁以上，无犯罪记录</p><p>2. 在希腊购买价值在25万欧元或以上的房产</p><p>3. 购买全家的医疗保险</p><p>4. 无需在当地有定期存款，只需保证稳定的海外收入，足以支付申请人以及其受养人在希腊当地的日常开销；（2万欧元以上的存款证明用于申请签证）。</p><p>5.非欧盟成员国公民</p><p>6.体检证明，无传染病证明</p><p style=\"text-align: center;\"><br/></p>','images/product/1428917196_putaoya.jpg,images/product/1428917196_putaoya2.jpg','',1428915399,'',''),(54,7,'西班牙',0.00,'','<p>西班牙是西欧国家人口密度最低的<span style=\"line-height: 19.2000007629395px;\">国家之一，属于欧洲高福利国家。</span></p><p>* &nbsp;医疗保险——60欧元每人/月</p><p>* &nbsp;免费教育——14年义务教育</p><p>* &nbsp;退休金——凡年满65岁，且缴纳</p><p>* &nbsp;西班牙实行全民免费公共医疗。</p><p>* &nbsp;西班牙是世界公共医疗卫生体系最好的国家之一。医疗水准较高，</p><p>* &nbsp;相关医疗设备也很先进。</p><p>* &nbsp;健康医疗网络完善，卫生中心和医院分布密集，可以提供初级诊断和专门护理。</p><p>* &nbsp;有完善的预防和应急体系，急救系统发达，只要拨打112电话，即可以迅速得到急救服务。</p><p>过5年保险金均可以得到养老金；<span style=\"line-height: 19.2000007629395px;\">年满65岁，但没有缴纳保险的老人，</span><span style=\"line-height: 19.2000007629395px;\">如没有其他经济收入，也能够领取</span><span style=\"line-height: 19.2000007629395px;\">一定数量的养老金。</span><span style=\"line-height: 19.2000007629395px;\">唯一14年免费义务教育的国家</span><span style=\"line-height: 19.2000007629395px;\">幼儿园教育两年免费，小学6年（6-12周岁）、</span><span style=\"line-height: 19.2000007629395px;\">初中4年（12-16岁）、高中2年（16-18岁）</span><span style=\"line-height: 19.2000007629395px;\">高等教育由大学教育、高等技术教育、高等职业教育、高等设计及雕塑艺术教育，以及高等体育教育组成。</span><span style=\"line-height: 19.2000007629395px;\">全国有高等院校300多所，除几所天主教、私立大学外，其余为公立大学。其中17所大学登上了2011年英国QS（QS Top Universities）全球大学排行版。</span><span style=\"line-height: 19.2000007629395px;\">移民欧洲后，您的子女可以接受多国语言的熏陶，轻松掌握多门语言。</span></p><p><span style=\"line-height: 19.2000007629395px;\"></span></p><p>申请条件</p><p>1、正当稳定的经济来源</p><p>2、无犯罪记录</p><p>3、在西班牙购买价值50万欧元以上的不动产</p><p>项目优势</p><p>&nbsp;一证在手，畅行欧洲（申根27国免签）</p><p>&nbsp; 抄底欧洲房产好时机，且永久产权</p><p>&nbsp; 子女可以享受免费的14年义务教育，选择欧洲名校</p><p>&nbsp; 申请手续简单快捷，递交申请后约3-4个月获批</p><p>&nbsp; 无经商管理经验，学历，语言，年龄要求</p><p>&nbsp; 无需证明资产来源，5年后可卖掉房产</p><p>&nbsp; 没有移民监，可自由支配时间</p><p>&nbsp; 申请永居无需考西班牙语</p><p><span style=\"line-height: 19.2000007629395px;\"></span></p><p>转永居条件：</p><p>&nbsp;第一年申请人持有居留签证，无需换居留卡</p><p>&nbsp;第二年换发两年期的居留卡</p><p>&nbsp;第四年换发两年期的居留卡</p><p>每个居留期内入境西班牙一次（5年入境4次即可）</p><p>五年后换发西班牙永久居留卡（无需考西班牙语）</p><p>换发永居前保持50万欧元以上不动产没有变卖、抵押、贷款</p><p>无犯罪记录</p><p>入国籍条件：</p><p>持有永居卡5年后可以申请入籍，通过西班牙考试</p><p><span style=\"line-height: 19.2000007629395px;\"><br/></span><br/></p><p><br/></p>','images/product/1428917314_putaoya.jpg,images/product/1428917314_putaoya2.jpg','',1428915814,'',''),(55,7,'葡萄牙',0.00,'','<p>里斯本 （Lisbon）– 首都</p><p>&nbsp; &nbsp;葡萄牙最富庶的城市；极具包容性、开放性的国际化都市<span style=\"line-height: 19.2000007629395px;\">全国的交通枢纽，葡萄牙第一大港</span><span style=\"line-height: 19.2000007629395px;\">根据最新城市生活质量调查, 里斯本的生活水平超过米兰、</span><span style=\"line-height: 19.2000007629395px;\">罗马和马德里，在欧洲城市中名列前茅</span></p><p>波尔图（Porto）</p><p>&nbsp; &nbsp;位于北部，是葡萄牙第二大城市，人口23.75万，也是葡萄牙最重要的工业城市</p><p>科英布拉（Coimbra）</p><p>&nbsp; &nbsp;位于葡中部，文化教育中心，葡最古老的大学科英布拉大学即座落在此</p><p>法鲁（Faro）</p><p>&nbsp; &nbsp;位于葡最南端，临地中海，著名旅游城市</p><p>两个自治区：亚速尔群岛（A&amp;ccedil;ores）和马德拉群岛（Madeira）</p><p><strong>移民优势：</strong></p><p><strong></strong></p><p>凭所持有居住许可可以自由出入所有欧盟及申根国家</p><p>若持有永居：</p><p>&nbsp; &nbsp;可以用葡永居申请其他申根国家的永居</p><p>&nbsp; &nbsp;若可以加入葡国籍：</p><p>&nbsp; &nbsp;在葡之外的欧盟国家学习，可以享受欧盟学生的费用，以英国为例欧盟学生学费比国际学生少近2/3</p><p>&nbsp; &nbsp;享受165个国家的免签，其中包括美国、加拿大、澳大利亚等</p><p>&nbsp; &nbsp;世界上有2.3亿人把葡萄牙语作为他们的第一语言，是世界流行语种的第8位</p><p>&nbsp; &nbsp;有8个国家以葡萄牙语作为官方语言，即葡萄牙、巴西、安哥拉、佛得角群岛、几内亚比绍、莫桑比克、圣多美和普林西比、东帝汶。其中巴西是金砖四国之一</p><p><strong></strong></p><p>&nbsp; &nbsp;葡萄牙在全球健康医疗体系中排名第12位。<span style=\"line-height: 19.2000007629395px;\">在葡萄牙，医生与国民的比率为1:256, 每所医院配备300张病床， 国内生产总值的10.1%用于国民医疗 (WHO “World Health Report” 2011)</span><span style=\"line-height: 19.2000007629395px;\">根据2010年人类发展报告，葡萄牙人平均寿命达到了79.1岁。</span></p><p>公共健康体系：<span style=\"line-height: 19.2000007629395px;\">获得医疗救助的方式主要取决于申请人的居住位置。总体来看，健康医</span><span style=\"line-height: 19.2000007629395px;\">疗和医疗救助是由当地健康中心负责。如果需要专家门诊，需要在72小</span><span style=\"line-height: 19.2000007629395px;\">时内预约。</span></p><p><strong></strong></p><p>公立教育体制：<span style=\"line-height: 19.2000007629395px;\">18岁以下的孩子接受免费义务教育</span></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;葡萄牙实行12年免费义务教育</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;大学学制是不同专业分为4年制和5年制</p><p>持有居住许可证的投资人，<span style=\"line-height: 19.2000007629395px;\">其子女在获得居住许可证后</span><span style=\"line-height: 19.2000007629395px;\">也享受与葡萄牙公民一样的</span><span style=\"line-height: 19.2000007629395px;\">教育福利待遇</span></p><p><br/></p>','images/product/1428916973_putaoya2putaoya.jpg,images/product/1428917020_putaoya2.jpg,images/product/1428916973_putaoya2.jpg','',1428916115,'','');
+/*!40000 ALTER TABLE `dou_product` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_product_category`
+--
+
+DROP TABLE IF EXISTS `dou_product_category`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_product_category` (
+  `cat_id` smallint(5) NOT NULL AUTO_INCREMENT,
+  `unique_id` varchar(30) NOT NULL DEFAULT '',
+  `cat_name` varchar(255) NOT NULL DEFAULT '',
+  `keywords` varchar(255) NOT NULL DEFAULT '',
+  `description` varchar(255) NOT NULL DEFAULT '',
+  `parent_id` smallint(5) NOT NULL DEFAULT '0',
+  `sort` tinyint(1) unsigned NOT NULL DEFAULT '50',
+  PRIMARY KEY (`cat_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_product_category`
+--
+
+LOCK TABLES `dou_product_category` WRITE;
+/*!40000 ALTER TABLE `dou_product_category` DISABLE KEYS */;
+INSERT INTO `dou_product_category` VALUES (8,'business','商旅服务','商旅服务','商旅服务',0,3),(7,'migrate','移民服务','移民服务','移民服务',0,2),(6,'study-abroad','留学服务','留学服务','留学服务',0,1);
+/*!40000 ALTER TABLE `dou_product_category` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `dou_show`
+--
+
+DROP TABLE IF EXISTS `dou_show`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dou_show` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `show_name` varchar(60) NOT NULL DEFAULT '',
+  `show_link` varchar(255) NOT NULL DEFAULT '',
+  `show_img` varchar(255) NOT NULL,
+  `type` varchar(10) NOT NULL,
+  `sort` tinyint(1) unsigned NOT NULL DEFAULT '50',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dou_show`
+--
+
+LOCK TABLES `dou_show` WRITE;
+/*!40000 ALTER TABLE `dou_show` DISABLE KEYS */;
+INSERT INTO `dou_show` VALUES (1,'banner1','','data/slide/20130514acunaubannbgbanner1.jpg','pc',1),(5,'手机版广告图片01','http://m.douco.com','data/slide/m/20140921rqmzcp.jpg','mobile',10),(6,'手机版广告图片02','http://m.douco.com','data/slide/m/20140921kwoypm.jpg','mobile',20),(7,'手机版广告图片03','http://m.douco.com','data/slide/m/20140921ypmnew.jpg','mobile',30),(8,'手机版广告图片04','http://m.douco.com','data/slide/m/20140921demloy.jpg','mobile',40);
+/*!40000 ALTER TABLE `dou_show` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2015-07-13  4:35:23
