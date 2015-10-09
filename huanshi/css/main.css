@@ -1,0 +1,177 @@
+body {
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	margin: 0px;
+}
+
+#huanshiTitle {
+	background: #555555;
+	width: 100%;
+	height: 10%;
+}
+
+#hTitle {
+    height: auto;
+    width: 100%;
+	text-align: center;
+	padding: 30px 0 30px 0;
+    font-family: "Copperplate", sans-serif;
+    font-size: 47px;
+}
+
+#navWrapper {
+	width: 100%;
+	height: auto;
+	min-height: 80px;
+    font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+    color: #333333;
+    font-size:17px;
+}
+
+#nav {
+	width: 70%;
+	margin: 0 auto;
+	min-height: 80px;
+}
+
+.nav-item {
+    float: left;
+	background: #555555;
+    width: 23%;
+    height: auto;
+	padding: 30px 5px 30px 5px;
+	text-align: center;
+}
+
+#main-banner {
+	background: #666666;
+	width: 100%;
+	height: 451px;
+}
+
+#main-intro {
+	background: #777777;
+	width: 100%;
+	height: 437px;
+}
+
+#introWrapper {
+	width: 969px;
+	height: 435px;
+	margin: 0 auto;
+
+}
+
+.intro-item {
+	float: left;
+	width: 301px;
+	height: 401px;
+	min-height: 180px;
+	margin: 17px 11px 17px 11px;
+	background-color: green;
+}
+
+.intro-item-img {
+	background-color: #233145;
+	width: 270px;
+	height: 270px;
+	margin: 15px;
+}
+
+.intro-item-desc {
+	background-color: #561245;
+	width: 271px;
+	height: 71px;
+	margin: 25px 15px 15px 15px;
+}
+
+
+
+#news {
+	background: #676767;
+	width: 100%;
+	height: 351px;
+}
+
+#newsWrapper {
+	height: 351px;
+	width: 969px;
+	margin: 0 auto;
+	background-color: #751260;
+}
+
+#newsImg {
+	float: left;
+	width: 301px;
+	height: 301px;
+	background-color: #741159;
+	margin: 24px 17px 24px 17px;
+}
+
+#newsContent {
+	float: left;
+	width: 597px;
+	height: 301px;
+	background-color: #640149;
+	margin: 24px 17px 24px 17px;
+}
+
+#footer {
+	background #f7f7f7;
+	width: 100%;
+	height: 210px;
+	margin: 50px;
+}
+
+.productWrapper {
+	background: #777777;
+	width: 100%;
+	height: 437px;
+}
+
+#proContext {
+	width: 969px;
+	height: 435px;
+	margin: 0 auto;
+
+}
+
+.product-item {
+	float: left;
+	width: 301px;
+	height: 401px;
+	min-height: 180px;
+	margin: 17px 11px 17px 11px;
+	background-color: green;
+}
+
+.intro {
+	background: #676767;
+	width: 100%;
+	height: 351px;
+}
+
+.introContext {
+	height: 351px;
+	width: 969px;
+	margin: 0 auto;
+	background-color: #751260;
+}
+
+.introAboutImg {
+	float: left;
+	width: 301px;
+	height: 301px;
+	background-color: #741159;
+	margin: 24px 17px 24px 17px;
+}
+
+.introAboutContent {
+	float: left;
+	width: 597px;
+	height: 301px;
+	background-color: #640149;
+	margin: 24px 17px 24px 17px;
+}
+
