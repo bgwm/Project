@@ -1,11 +1,12 @@
-/* 279 */
+/* 279 
+ * BFS is perfect for this one 
+ * */
 class perfectSquare {
 
-	/* F(n) = 1 + Min(f(n1), f(n2), f(n3), ...)
-	 * by memerized would optimcal the solution
-	 */
 	public numSquares(int n) {
+		if (n == 0) return 0;
 
+		ArrayList	
 
 	}
 
